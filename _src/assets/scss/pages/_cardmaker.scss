@@ -1,0 +1,19 @@
+.main-content {
+    background-color: $color-neutral-100;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, auto);
+    @media all and (min-width:$mediaTablet) {
+        padding: 23px 40px;
+        grid-template-columns: 1fr minmax(329px, 45%);
+        grid-template-rows: auto;
+        grid-template-areas: "design card";
+    }
+}
+.grid {
+    @media all and (min-width:$mediaTablet) {
+        &__item-1 {
+            grid-area: card;
+        }
+    }
+}
