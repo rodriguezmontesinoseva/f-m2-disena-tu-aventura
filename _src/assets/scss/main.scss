@@ -1,4 +1,7 @@
-@import 'core/settings';
+@import 'core/variables';
+@import 'core/base';
+
+
 
 body {
 	background: url('../images/logo-adalab-80px.png') center center no-repeat $color-white;
