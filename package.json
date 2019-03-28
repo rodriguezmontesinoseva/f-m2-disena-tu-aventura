@@ -1,0 +1,38 @@
+{
+  "name": "AdalabWebStarterKit",
+  "version": "2.0.2",
+  "description": "Adalab web starter kit",
+  "dependencies": {
+    "browser-sync": "^2.26.3",
+    "del": "^3.0.0",
+    "eslint": "^4.19.1",
+    "gulp": "^4",
+    "gulp-autoprefixer": "^6.0.0",
+    "gulp-clean-css": "^4.0.0",
+    "gulp-combine-mq": "^0.4.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-html-partial": "^1.0.1",
+    "gulp-notify": "^3.2.0",
+    "gulp-plumber": "^1.2.1",
+    "gulp-rename": "^1.4.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-sourcemaps": "^2.6.5",
+    "gulp-uglify-es": "^1.0.4",
+    "gulp-zip": "^4.2.0",
+    "run-sequence": "^2.2.1"
+  },
+  "scripts": {
+    "start": "gulp",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com:Adalab/Adalab-web-starter-kit.git"
+  },
+  "author": "Adalab",
+  "license": "MIT",
+  "homepage": "https://github.com/Adalab/Adalab-web-starter-kit",
+  "devDependencies": {
+    "gulp": "^4.0.0"
+  }
+}
