@@ -6,26 +6,47 @@
     justify-content: center;
     align-items: center;
     margin: 0px 35px 0px 35px;
+
+        @media all and (min-width:768px){
+            margin: 0px 175px 0px 175px;
+
+        }
 }
 
 .page-header_image{
     width: 250px;
-}
 
-.header_container-text{
-    margin-top: 30px;
+    @media all and (min-width:768px){
+        width: 420px;
+    }
 }
 
 .page-header_title{
+    margin-top: 30px;
     font-size: 18px;
     color: $color-secondary-600;
     font-family: 'Merriweather', serif;
     height: 24px;
     line-height: 1.4;
+
+    @media all and (min-width:768px){
+        width: 278px;
+        margin: auto;
+        margin-top: 30px;
+        font-size: 24px;
+        
+    }
 }
 
 .page-header_subtitle{
-    font-size: 12px;font-family: 'Open Sans', sans-serif;
-    color: $color-primary-800;   
+    font-size: 12px;
+    font-family: 'Open Sans', sans-serif;
+    color: $color-primary-800;  
+    
+    @media all and (min-width:768px){
+        font-size:16px;
+        width: 331px;
+        margin-top:5px;
+     }
 }
 
