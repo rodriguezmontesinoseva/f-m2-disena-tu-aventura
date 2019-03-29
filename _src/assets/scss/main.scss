@@ -5,10 +5,14 @@
 
 // Layout ones:
 @import 'layout/base';
+@import 'layout/footer';
 @import 'layout/headerLan';
 @import 'layout/mainLan';
 
 //Components//
 
 @import 'components/buttonStart-lan';
+
+// Pages
+@import './pages/cardmaker';
 
