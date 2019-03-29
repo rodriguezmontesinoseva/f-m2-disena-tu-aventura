@@ -2,11 +2,15 @@
 
 // Core ones:
 @import 'core/variables';
+@import './core/mixins';
 
 // Layout ones:
 @import 'layout/base';
 @import 'layout/footer';
 @import 'layout/headerLan';
+
+// Components
+@import './components/panelDesign';
 
 // Pages
 @import './pages/cardmaker';

@@ -1,0 +1,27 @@
+.panel-design {
+    color: $color-neutral-800;
+    border-bottom: 1px solid $color-neutral-200;
+    &__dropdown {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding-bottom: 10px;
+    }
+}
+
+.dropdown {
+    &__icon-section {
+        display: block;
+        @include drawRectangle(21px, 18px);
+    }
+    &__title {
+        font-size: 18px;
+        font-weight: 600;
+        text-transform: uppercase;
+    }
+    &__down-arrow {
+        display: block;
+        @include drawRectangle(16px, 18px);
+    }
+}
