@@ -1,4 +1,6 @@
+
 // Landing page, section main, icons
+//responsive it must be given to the central column
 
 .main-cont-icons{
     border: solid 2px $color-secondary-600-op30;
@@ -7,8 +9,6 @@
     justify-content: space-around;
     align-items: center;
     margin: 25px;
- //   opacity: 0.30;
-  //color: $color-secondary-600;
 }
 
 .main-item1-icons{
@@ -16,13 +16,11 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  //color: $color-secondary-600;
   padding: 15px;
   }
 
 .icon{
   width: 26px;
-  //  fill: currentColor;
 }
 
 .text-icons{
@@ -30,3 +28,4 @@
    font-family: $font-primary;
    font-size: 13px;
 }
+// the color of the icons I have given with the property "fill" inside the svg
