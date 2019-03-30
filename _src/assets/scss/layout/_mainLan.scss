@@ -1,35 +1,32 @@
 // Landing page, section main, icons
+
 .main-cont-icons{
-   // background-color: pink;
-    border: solid 1px $color-secondary-600;
+    border: solid 2px $color-secondary-600-op30;
+    border-radius: 5px;
     display: flex;
     justify-content: space-around;
     align-items: center;
     margin: 25px;
+ //   opacity: 0.30;
   //color: $color-secondary-600;
-
-
 }
+
+.main-item1-icons{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  //color: $color-secondary-600;
+  padding: 15px;
+  }
 
 .icon{
   width: 26px;
   //  fill: currentColor;
-}
-.main-item1-icons{
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-
-//color: $color-secondary-600;
-padding: 10px;
-
 }
 
 .text-icons{
    color: $color-neutral-800;
    font-family: $font-primary;
    font-size: 13px;
-
-
 }
