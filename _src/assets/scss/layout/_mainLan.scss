@@ -12,13 +12,17 @@
 }
 
 .icon{
+  width: 26px;
   //  fill: currentColor;
 }
 .main-item1-icons{
 display: flex;
 flex-direction: column;
 justify-content: center;
+align-items: center;
+
 //color: $color-secondary-600;
+padding: 10px;
 
 }
 
