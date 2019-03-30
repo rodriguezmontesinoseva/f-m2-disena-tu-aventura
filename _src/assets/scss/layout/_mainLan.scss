@@ -1,0 +1,31 @@
+// Landing page, section main, icons
+.main-cont-icons{
+   // background-color: pink;
+    border: solid 1px $color-secondary-600;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 25px;
+  //color: $color-secondary-600;
+
+
+}
+
+.icon{
+  //  fill: currentColor;
+}
+.main-item1-icons{
+display: flex;
+flex-direction: column;
+justify-content: center;
+//color: $color-secondary-600;
+
+}
+
+.text-icons{
+   color: $color-neutral-800;
+   font-family: $font-primary;
+   font-size: 13px;
+
+
+}
