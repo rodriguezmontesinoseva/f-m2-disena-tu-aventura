@@ -1,7 +1,11 @@
 .preview__section {
     background: linear-gradient(top, rgba(191,205,208,1) 0%, rgba(221,233,237,1) 100%);
-    padding: 40px;
+    padding: 0 40px 40px 40px;
     font-family: 'Open Sans', sans-serif;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .preview__card {
     position: relative;
@@ -16,21 +20,21 @@
     background-color: grey;
 }
 .deco-rectangle__card{
-    position: relative;
-    top: 54px;
+    position: absolute;
+    top: 20px;
     width: 0px;
     height: 0px;
     border-left: solid 5px $color-primary-200;
     border-top: solid 45px $color-primary-200;
 }
 .full-name__card {
-    padding: 10px 20px 0 20px;
+    padding: 21px 20px 0 20px;
     font-size: 18px;
     line-height: 20px;
     color: $color-primary-800;
 }
 .ocupation__card {
-    padding: 8px 20px 10px 20px;
+    padding: 4px 20px 10px 20px;
     font-size: 16px;
     line-height: 20px;
     color: $color-neutral-800;
