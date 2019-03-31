@@ -39,6 +39,17 @@
     line-height: 20px;
     color: $color-neutral-800;
 }
-.social__card--container {
-    height: 56px;
+.social__card--list {
+    padding: 10px 20px 12px 20px;
+    max-height: 56px;
+    display: flex;
+    flex-direction: row;
+}
+.social__icons {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    border: solid 2px $color-primary-200;
+    margin-right: 10px;
+
 }
