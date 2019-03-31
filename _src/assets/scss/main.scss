@@ -7,6 +7,10 @@
 @import 'layout/base';
 @import 'layout/footer';
 @import 'layout/headerLan';
+@import 'layout/preview';
+
+// Components:
+@import 'components/buttons';
 
 // Pages
 @import './pages/cardmaker';

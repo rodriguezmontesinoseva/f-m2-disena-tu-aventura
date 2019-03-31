@@ -1,0 +1,27 @@
+/* RESET Button in Preview Section */
+
+.reset__button {
+    -webkit-appearance: none;
+    appearance:none;
+    -moz-appearance:none;
+    width: 75px;
+    height: 30px;
+    border-radius: 15px;
+    background-color: transparent;
+    border: solid 1px white;
+    border-radius: 30px 30px;
+    color: $color-neutral-800;
+    font-size: 12px;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    margin: 38px 0 20px;
+
+}
+.trash-icon{
+    max-width: 11px;
+    margin-right: 5px;
+}
