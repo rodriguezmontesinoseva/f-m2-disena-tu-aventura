@@ -6,6 +6,9 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    @media all and (min-width:$mediaTablet) {
+        border-radius: 6px;
+    }  
 }
 .preview__card {
     position: relative;
@@ -17,6 +20,7 @@
 .photo__preview {
     width: 240px;
     height: 200px;
+    background-image: url(https://via.placeholder.com/240x200);
     background-color: grey;
 }
 .deco-rectangle__card{
@@ -51,8 +55,9 @@
     border-radius: 50%;
     border: solid 2px $color-primary-200;
     margin-right: 10px;
+    text-align: center;
 }
 .wrap-icon{
-    max-width: 22px;
-    padding: 5px 0 0 5px;
+    max-width: 18px;
+    padding-top: 5px;
 }
