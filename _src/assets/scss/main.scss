@@ -6,12 +6,14 @@
 // Layout ones:
 @import 'layout/base';
 @import 'layout/footer';
-@import 'layout/headerLan';
+@import 'layout/headerLan'; 
 @import 'layout/mainLan';
 
 //Components//
 
-@import 'components/buttonStart-lan';
+@import 'components/buttons';
+@import 'components/typography';
+
 
 // Pages
 @import './pages/cardmaker';
