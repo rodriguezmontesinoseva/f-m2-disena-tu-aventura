@@ -1,0 +1,19 @@
+.main-button__start{
+    text-decoration: none;
+    border-radius: 21px;
+    background-color:$color-primary-600;
+    width: 130px;
+    height: 40px;
+    text-align: center;
+    color: $color-neutral-0;
+    padding: 10px 0px 10px 0px;
+    text-transform: $text-upercase;
+    font-size: $font-size-M;
+    margin-bottom: 30px;
+    font-family: $font-default;
+    font-weight: $font-weight-thick; 
+
+    @media all and (min-width:$mediaTablet){
+        margin-bottom: 60px;
+    }
+}
