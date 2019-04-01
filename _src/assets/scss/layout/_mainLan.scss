@@ -37,12 +37,35 @@
      }
 }
 
-.icons{
-    margin: 20px 0px 40px 0px;
-    height: 80px;
-    overflow: hidden;
-    @media all and (min-width:$mediaTablet){
-        margin-bottom: 186px;
-     }
+// Landing page, section main, icons
+//responsive it must be given to the central column
 
+.main-cont-icons{
+    border: solid 2px rgba($color: $color-secondary-600, $alpha: 0.3);
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 25px;
 }
+
+.main-item1-icons{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  }
+
+.icon{
+  width: 26px;
+}
+
+.text-icons{
+   font-family: $font-style-Open;
+   font-size: 13px;
+}
+// the color of the icons I have given with the property "fill" inside the svg
+
+
+
