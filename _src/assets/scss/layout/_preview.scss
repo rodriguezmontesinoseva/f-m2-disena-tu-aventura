@@ -21,6 +21,8 @@
     width: 240px;
     height: 200px;
     background-image: url(https://via.placeholder.com/240x200);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .deco-rectangle__card{
     position: absolute;
@@ -34,6 +36,7 @@
     padding: 21px 20px 0 20px;
     font-size: 18px;
     line-height: 20px;
+    text-transform: capitalize;
     color: $color-primary-800;
 }
 .ocupation__card {
