@@ -8,12 +8,23 @@ $color-primary-800: #114e4e;
 // Secondary colors (orange ones):
 $color-secondary-100: #f9f4dc;
 $color-secondary-600: #e17334;
+$color-secondary-650: #420E08;
+$color-secondary-660: #BE372A;
+$color-secondary-670: #E95735;
+$color-secondary-700: #1F4E4E;
+$color-secondary-710: #438792;
+$color-secondary-720: #A2DEAF;
+$color-secondary-800: #3497FD;
+$color-secondary-850: #3E5B65;
+$color-secondary-860: #DFE5EB;
+$color-secondary-870: #A0C0CF;
 
 
 // Neutral colors (greyscale):
 $color-neutral-0: #ffffff;
 $color-neutral-100: #f5f5f5;
 $color-neutral-200: #d8d8d8;
+$color-neutral-400: #bbbbbb;
 $color-neutral-700: #6b6b6b;
 $color-neutral-800: #54585a;
 $color-neutral-1000: #000000;
@@ -21,5 +32,5 @@ $color-neutral-1000: #000000;
 // Mediaquery
 $mediaTablet: 768px;
 
-//Fonts
-$font-primary: 'open sans';
+// Fonts
+$font-default: 'Open Sans', sans-serif;

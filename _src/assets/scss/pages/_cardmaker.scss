@@ -16,4 +16,10 @@
             grid-area: card;
         }
     }
+    &-item__fill-fields {
+        padding: 27px 20px 31px;
+        @media all and (min-width:$mediaTablet) {
+            padding: 0;
+        }
+    }
 }

@@ -1,0 +1,10 @@
+@mixin drawRectangle($width, $height) {
+    width: $width;
+    height: $height;
+}
+
+@mixin totalCenter() {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
