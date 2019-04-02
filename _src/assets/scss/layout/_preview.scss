@@ -1,5 +1,5 @@
 .preview__section {
-    background: linear-gradient(top, rgba(191,205,208,1) 0%, rgba(221,233,237,1) 100%);
+    background: linear-gradient(to top, #e17334, #e3844f, #e39569, #e2a583, #dfb59e);
     padding: 0 40px 40px 40px;
     font-family: 'Open Sans', sans-serif;
     display:flex;
@@ -20,7 +20,7 @@
 .photo__preview {
     width: 240px;
     height: 200px;
-    background-image: url(https://via.placeholder.com/240x200);
+    background-image: url(../images/user-photo-default.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;

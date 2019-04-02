@@ -1,11 +1,13 @@
 .footer__page {
+    border-top: solid 1px $color-neutral-200;
+}
+.footer__flex-wrapper {
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 10px 0 10px;
-    border-top: solid 1px $color-neutral-200;
     @media all and (min-width:$mediaTablet) {
         flex-direction: row;
         justify-content: space-between;

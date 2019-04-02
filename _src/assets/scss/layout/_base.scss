@@ -19,3 +19,9 @@ body{
     color: $color-neutral-800;
     background-color: $color-neutral-100;
 }
+.column-center {
+    @media all and (min-width:$madiaTV) {
+        max-width: 1500px;
+        margin: 0 auto;
+    }
+}

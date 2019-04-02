@@ -6,9 +6,12 @@
     @media all and (min-width:$mediaTablet) {
         grid-gap: 30px;
         padding: 23px 40px;
-        grid-template-columns: 1fr minmax(329px, 45%);
+        grid-template-columns: 313px 1fr;
         grid-template-rows: auto;
         grid-template-areas: "design card";
+    }
+    @media all and (min-width:$madiaTV) {
+        padding: 23px 0;
     }
 }
 .grid {
