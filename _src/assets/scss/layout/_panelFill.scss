@@ -1,3 +1,4 @@
+// Habría que cambiar el nombre de la clase a panel:
 .panel-design, .panel-fill {
     color: $color-neutral-800;
     border-bottom: 1px solid $color-neutral-200;
@@ -21,12 +22,12 @@
 }
 
 
-// .title-image__wrapper {      
-//     display: flex;
-//     flex-direction: row;
-//     justify-content: flex-start;
-//     align-items: center;
-// }
+.title-image__wrapper {      
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
 
 .dropdown {
     &__icon-section {
