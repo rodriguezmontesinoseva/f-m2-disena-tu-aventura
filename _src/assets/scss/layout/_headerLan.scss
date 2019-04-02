@@ -6,7 +6,8 @@
     margin: 100px 30px 0px 30px;
 
         @media all and (min-width:$mediaTablet){
-            margin: 350px 175px 0px 175px;
+            margin: 0px 175px 0px 175px;
+            padding-top:200px;
         }
 }
 

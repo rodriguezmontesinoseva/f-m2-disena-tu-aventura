@@ -4,13 +4,13 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 10px 0 10px;
     border-top: solid 1px #d8d8d8;
+    margin-top: 20px;
+    padding-top: 10px;
     @media all and (min-width:768px) {
         flex-direction: row;
         justify-content: space-between;
-        padding-left: 40px;
-        padding-right: 40px;
+        padding: 20px 40px 20px 40px;
     }  
 }
 .footer__copyright {
