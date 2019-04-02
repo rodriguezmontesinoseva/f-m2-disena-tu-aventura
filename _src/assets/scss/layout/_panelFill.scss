@@ -1,9 +1,10 @@
-// Habría que cambiar el nombre de la clase a panel:
-.panel-design, .panel-fill {
+// Habría que cambiar el nombre de la clase a ".panel" simplemente:
+.panel-fill {
     color: $color-neutral-800;
     border-bottom: 1px solid $color-neutral-200;
 
-    &__dropdown {        
+    &__dropdown {    
+        margin-top: 10px;    
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -11,16 +12,14 @@
         padding-bottom: 10px;
     }
 
-    &__radios {
-        padding: 13px 0 0 19px;
-        display: flex;
-        justify-content: space-between;
-        @media all and (min-width: $mediaTablet) {
-            padding: 13px 0 0 0;
-        }
+    &__form {
+        padding: 15px 0 9px;
     }
 }
 
+// svg path {
+//     color: red !important;
+// }
 
 .title-image__wrapper {      
     display: flex;
@@ -36,116 +35,39 @@
         margin-right: 12px;
     }
     &__title {
-        font-size: 18px;
-        font-weight: 600;
-        text-transform: uppercase;
+        font-size: $font-size-L;
+        font-weight: $font-weight-thick;
+        text-transform: $text-upercase;
     }
     &__down-arrow {
+        // color: currentColor;
         display: block;
         @include drawRectangle(16px, 18px);
     }
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+    }
 }
 
-// .radios {
-//     &__title {
-//         text-transform: uppercase;
-//         font-size: 14px;
-//     }
-//     &__picker {
-//         margin-bottom: 30px;
-//     }
-//     &-buttons {
-//         margin-right: 10px;
-//     }
-//     &-text {
-//         display: block;
-//     }
-// }
+.item {
+    &__label {
+        margin-bottom: 6px;
 
-// .control {
-//     &__text {
-//         position: relative;
-//         display: block;
-//         margin-bottom: 20px;
-//         padding-left: 30px;
-//         cursor: pointer;
-//         &:last-child {
-//             margin-bottom: 0;
-//         }
-//         & .control__indicator {
-//             border-radius: 50%;
-//         }
-//     }
-//     &__radio {
-//         // Ocultamos el radio button original
-//         position: absolute;
-//         z-index: -1;
-//         opacity: 0;
-//     }
-//     &__indicator {
-//         // Dibujamos un radio a nuestro gusto
-//         position: absolute;
-//         top: 2px;
-//         left: 0;
-//         @include drawRectangle(17px, 17px);
-//         border: 1px solid $color-neutral-400;
-//     }
-// }
+        font-size: $font-size-S;
+        font-weight: $font-weight-regular;
+        color: $color-primary-800;
+    }
+    &__information {
+        height: 30px;
+        margin-bottom: 19px;
 
-// .control__radio:checked ~ .control__indicator {
-//     // Color que le damos al radio al estar seleccionado
-//     background: $color-secondary-800;
-// }
-// .control__indicator:after {
-//     // Creamos el pseudoelemento y lo "quitamos" para usarlo en otra ocasión
-//     content: '';
-//     position: absolute;
-//     display: none;
-// }
-// .control__text .control__indicator:after {
-//     // Dibujamos el circulito blanco del centro del radio
-//     @include totalCenter();
-//     @include drawRectangle(5px, 5px);
-//     border-radius: 50%;
-//     background-color: $color-neutral-0;
-// }
-// .control__radio:checked ~ .control__indicator:after {
-//     // Hace que el círculo central aparezca
-//     display: block;
-// }
+        border: 1px solid $color-primary-200;
+    }
+}
 
-// .box {
-//     &-wrapper {
-//         display: flex;
-//         flex-direction: row;
-//     }
-//     @include drawRectangle(30px, 25px);
-//     &-color1 {
-//         background-color: $color-secondary-700;
-//     }
-//     &-color2 {
-//         background-color: $color-secondary-710;
-//     }
-//     &-color3 {
-//         background-color: $color-secondary-720;
-//     }
-//     &-color4 {
-//         background-color: $color-secondary-650;
-//     }
-//     &-color5 {
-//         background-color: $color-secondary-660;
-//     }
-//     &-color6 {
-//         background-color: $color-secondary-670;
-//     }
-//     &-color7 {
-//         background-color: $color-secondary-850;
-//     }
-//     &-color8 {
-//         background-color: $color-secondary-860;
-//     }
-//     &-color9 {
-//         background-color: $color-secondary-870;
-//     }
-
-// }
+input::placeholder {
+    color: $color-neutral-300;
+    padding-left: 10px;
+}
