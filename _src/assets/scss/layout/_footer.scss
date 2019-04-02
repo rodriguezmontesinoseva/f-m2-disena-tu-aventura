@@ -13,7 +13,11 @@
         justify-content: space-between;
         padding-left: 40px;
         padding-right: 40px;
-    }  
+    }
+    @media all and (min-width:$mediaTV) {
+        padding-left: 0;
+        padding-right: 0;
+    } 
 }
 .footer__copyright {
     font-family: 'Open Sans', sans-serif;

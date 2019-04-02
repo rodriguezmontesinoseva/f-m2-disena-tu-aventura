@@ -20,7 +20,7 @@ body{
     background-color: $color-neutral-100;
 }
 .column-center {
-    @media all and (min-width:$madiaTV) {
+    @media all and (min-width:$mediaTV) {
         max-width: 1500px;
         margin: 0 auto;
     }

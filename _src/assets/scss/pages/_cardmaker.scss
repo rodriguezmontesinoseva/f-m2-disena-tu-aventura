@@ -10,7 +10,7 @@
         grid-template-rows: auto;
         grid-template-areas: "design card";
     }
-    @media all and (min-width:$madiaTV) {
+    @media all and (min-width:$mediaTV) {
         padding: 23px 0;
     }
 }
