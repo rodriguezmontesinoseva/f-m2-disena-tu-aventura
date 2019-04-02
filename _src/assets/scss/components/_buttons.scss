@@ -43,3 +43,21 @@
     max-width: 11px;
     margin-right: 5px;
 }
+
+// On app page, inside the Fill panel, the "Añadir Imagen" button:
+.item__info--button {
+    display: inline-block;
+    height: 30px;
+    margin-bottom: 19px;
+    margin-right: 20px;
+
+    // I think the ideal would be no fixing the width but make the button as wide as its content+padding, but is not working yet:
+    // padding: 0 20px;
+    width: 140px;
+
+    color: $color-neutral-0;
+    background: $color-secondary-600;
+    border: 0;
+    border-radius: 3px;
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.32);
+}

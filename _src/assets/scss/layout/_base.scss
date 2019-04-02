@@ -10,6 +10,13 @@ ul, ol {
     list-style: none;
 }
 
+// Reset default styles of buttons:
+button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+  }
+
+
 // General settings:
 body{
     font-size: $font-size-M;
