@@ -1,0 +1,45 @@
+.main-button__start{
+    text-decoration: none;
+    border-radius: 21px;
+    background-color:$color-primary-600;
+    width: 130px;
+    height: 40px;
+    text-align: center;
+    color: $color-neutral-0;
+    padding: 10px 0px 10px 0px;
+    text-transform: $text-upercase;
+    font-size: $font-size-M;
+    margin-bottom: 30px;
+    font-family: $font-default;
+    font-weight: $font-weight-thick; 
+
+    @media all and (min-width:$mediaTablet){
+        margin-bottom: 60px;
+    }
+}
+/* RESET Button in Preview Section */
+
+.reset__button {
+    -webkit-appearance: none;
+    appearance:none;
+    -moz-appearance:none;
+    width: 75px;
+    height: 30px;
+    border-radius: 15px;
+    background-color: transparent;
+    border: solid 1px white;
+    border-radius: 30px 30px;
+    color: $color-neutral-800;
+    font-size: 12px;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    margin: 38px 0 20px;
+
+}
+.trash-icon{
+    max-width: 11px;
+    margin-right: 5px;
+}

@@ -2,6 +2,7 @@
 
 // Core ones:
 @import 'core/variables';
+@import './core/mixins';
 
 // Layout ones:
 @import 'layout/base';
@@ -9,6 +10,11 @@
 @import 'layout/headerLan';
 @import 'layout/headerApp';
 @import 'layout/mainLan';
+@import 'layout/preview';
+
+// Components
+@import './components/panelDesign';
+@import 'components/buttons';
 
 //Components ones:
 @import './components/panelFill';

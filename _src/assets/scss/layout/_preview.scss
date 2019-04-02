@@ -1,0 +1,67 @@
+.preview__section {
+    background: linear-gradient(top, rgba(191,205,208,1) 0%, rgba(221,233,237,1) 100%);
+    padding: 0 40px 40px 40px;
+    font-family: 'Open Sans', sans-serif;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    @media all and (min-width:$mediaTablet) {
+        border-radius: 6px;
+    }  
+}
+.preview__card {
+    position: relative;
+    width: 240px;
+    background-color: $color-neutral-0;
+    border-radius: 2px;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.35);
+}
+.photo__preview {
+    width: 240px;
+    height: 200px;
+    background-image: url(https://via.placeholder.com/240x200);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.deco-rectangle__card{
+    position: absolute;
+    top: 20px;
+    width: 0px;
+    height: 0px;
+    border-left: solid 5px $color-primary-200;
+    border-top: solid 45px $color-primary-200;
+}
+.full-name__card {
+    padding: 21px 20px 0 20px;
+    font-size: 18px;
+    line-height: 20px;
+    text-transform: capitalize;
+    color: $color-primary-800;
+}
+.ocupation__card {
+    padding: 4px 20px 10px 20px;
+    font-size: 16px;
+    line-height: 20px;
+    color: $color-neutral-800;
+}
+.social__card--list {
+    padding: 10px 20px 12px 20px;
+    max-height: 56px;
+    display: flex;
+    flex-direction: row;
+  
+}
+.social__icons {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    border: solid 2px $color-primary-200;
+    margin-right: 10px;
+    text-align: center;
+}
+.wrap-icon{
+    max-width: 18px;
+    padding-top: 5px;
+}
