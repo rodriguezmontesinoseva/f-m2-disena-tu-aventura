@@ -6,13 +6,14 @@
 
 // Layout ones:
 @import 'layout/base';
-@import 'layout/footer';
 @import 'layout/headerLan';
-@import 'layout/headerApp';
 @import 'layout/mainLan';
+@import 'layout/footer';
+
+@import 'layout/headerApp';
 @import 'layout/preview';
 @import 'layout/panelDesign';
-@import 'layout/panelFill';
+@import 'layout/panelFillApp';
 
 // Components
 @import 'components/buttons';
