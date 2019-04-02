@@ -1,0 +1,23 @@
+
+.align_share{
+    display:flex;
+    justify-content: center;
+}
+
+.btn_share{
+    width: 200px;
+    height: 50px;
+    // outline: none;
+    // text-decoration: none;
+    border: none;
+    border-radius: 12px;
+    background-color: $color-secondary-600;
+
+    text-align: center;    
+    color: $color-neutral-0;
+    text-transform: uppercase;
+    font-family: $font-default;
+    font-size: $font-size-L;
+    font-weight: $font-weight-thick;
+
+}
