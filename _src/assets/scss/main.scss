@@ -11,11 +11,10 @@
 @import 'layout/headerApp';
 @import 'layout/mainLan';
 @import 'layout/preview';
+@import 'layout/panelDesign';
 
 // Components
-@import './components/panelDesign';
 @import 'components/buttons';
 
 // Pages
 @import './pages/cardmaker';
-
