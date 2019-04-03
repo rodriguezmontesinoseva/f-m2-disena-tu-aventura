@@ -14,6 +14,7 @@
 .btn_share{
     width: 200px;
     height: 50px;
+    margin: 30px;
     // outline: none;
     // text-decoration: none;
     border: none;
@@ -42,6 +43,7 @@ height: 25px;
 .btn_twitter{
     width: 181px;
     height: 30px;
+    margin: 30px;
     // outline: none;
     // text-decoration: none;
     border: none;
@@ -65,5 +67,9 @@ height: 25px;
 .card-create{
     font-size: $font-size-L;
     font-weight: $font-weight-thick;
+    margin: 30px;
+}
 
+.card-link{
+    
 }
