@@ -2,6 +2,10 @@
     <!-- Cuando creeis los parciales, a la sección principal que lo contiene ponerle las clases grid-item__card y grid-item__fill-fields respectivamente. Y que el primer parcial sea el que contiene la previsualización de la tarjeta -->
     <partial src="_preview.html"></partial>
     <section class="grid-item__fill-fields">
-        <partial src="_design.html"></partial>
+        <!-- Everything inside this section is a single form, so every panel should be a partial inside it: -->
+        <form action="/signup" method="post" class="main-form">
+            <partial src="_design.html"></partial>
+            <partial src="_fillApp.html"></partial>
+        </form>
     </section>
 </main>

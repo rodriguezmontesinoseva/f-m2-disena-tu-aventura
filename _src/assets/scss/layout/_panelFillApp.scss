@@ -1,0 +1,90 @@
+// Habría que cambiar el nombre de la clase a ".panel" simplemente:
+.panel-fill {
+    color: $color-neutral-800;
+    border-bottom: 1px solid $color-neutral-200;
+
+    &__dropdown {    
+        margin-top: 10px;    
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding-bottom: 10px;
+    }
+
+    &__form {
+        padding: 15px 0 9px;
+    }
+}
+
+// Not working:
+// svg path {
+//     color: red !important;
+// }
+
+.title-image__wrapper {      
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.dropdown {
+    &__icon-section {
+        display: block;
+        @include drawRectangle(21px, 18px);
+        margin-right: 12px;
+    }
+    &__title {
+        font-size: $font-size-L;
+        font-weight: $font-weight-thick;
+        text-transform: $text-upercase;
+    }
+    &__down-arrow {
+        // color: currentColor;
+        display: block;
+        @include drawRectangle(16px, 18px);
+    }
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.item {
+    &__label {
+        margin-bottom: 6px;
+
+        font-size: $font-size-S;
+        font-weight: $font-weight-regular;
+        color: $color-primary-800;
+    }
+    &__info {
+        height: 30px;
+        margin-bottom: 19px;
+
+        border: 1px solid $color-primary-200;
+    }
+}
+
+
+.item__info--image-container {
+    margin-top: 1px;
+    display: flex;
+    justify-content: flex-start;
+
+}
+
+.item__info--thumbnail {
+    @include drawRectangle(30px, 30px);
+    display: inline-block;
+
+    border: 1px solid $color-primary-200;
+}
+
+
+input::placeholder {
+    color: $color-neutral-300;
+    padding-left: 10px;
+}
