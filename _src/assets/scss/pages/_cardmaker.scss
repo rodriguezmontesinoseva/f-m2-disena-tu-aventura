@@ -18,6 +18,9 @@
         }
     }
     &-item__fill-fields {
+        // We have a background gradient in all panels here:
+        background: linear-gradient(top, $color-neutral-100, $color-neutral-0);
+        border: 0;
         padding: 27px 20px 31px;
         @media all and (min-width:$mediaTablet) {
             padding: 0;

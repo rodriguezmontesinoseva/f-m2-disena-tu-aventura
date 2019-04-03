@@ -10,12 +10,15 @@ ul, ol {
     list-style: none;
 }
 
-// Reset default styles of buttons:
+// Reset default styles of buttons and fielsets in forms:
 button {
     -webkit-appearance: none;
     -moz-appearance: none;
-  }
+}
 
+fieldset {
+    border-style: none;
+}
 
 // General settings:
 body{
