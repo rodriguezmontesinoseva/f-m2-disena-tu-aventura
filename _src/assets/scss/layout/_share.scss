@@ -2,6 +2,13 @@
 .align_share{
     display:flex;
     justify-content: center;
+
+}
+
+.align_share_text{
+    flex-direction: column;
+    text-align: center;
+
 }
 
 .btn_share{
@@ -18,6 +25,44 @@
     color: $color-neutral-0;
     text-transform: uppercase;
     font-family: $font-default;
+    font-size: $font-size-L;
+    font-weight: $font-weight-thick;
+
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+.icon__id-card{
+width: 25px;
+height: 25px;
+}
+
+.btn_twitter{
+    width: 181px;
+    height: 30px;
+    // outline: none;
+    // text-decoration: none;
+    border: none;
+    border-radius: 3px;
+    box-shadow: 0 0px 4px 0 rgba($color-neutral-1000, 0.32);
+    background-color: $color-secondary-770;
+
+    text-align: center;    
+    color: $color-neutral-0;
+    //text-transform: uppercase;
+    font-family: $font-default;
+    font-size: $font-size-S;
+    font-weight: $font-weight-thin;
+
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+.card-create{
     font-size: $font-size-L;
     font-weight: $font-weight-thick;
 
