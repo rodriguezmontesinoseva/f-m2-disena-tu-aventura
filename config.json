@@ -20,7 +20,7 @@
       "_src/assets/js/main.js",
 			"_src/assets/js/fill-github.js",
       "_src/assets/js/fill-email.js",
-			"_src/assets/js/fill-image.js",      
+			"_src/assets/js/fill-image.js"      
 		],
 		"dest": "public/assets/js/",
     "dist": "docs/assets/js/"
