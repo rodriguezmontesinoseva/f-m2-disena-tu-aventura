@@ -2,7 +2,6 @@
 
 // EMAIL //
 
-const defectEmailPreview = document.querySelector('.email__card').innerHTML;
 const emailLink = document.querySelector('#email');
 const emailPreviewLink = document.querySelector('.email__card');
 
