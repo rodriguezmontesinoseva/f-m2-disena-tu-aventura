@@ -9,7 +9,8 @@ const linkedinInputEl = document.querySelector("#linkedin");
 const linkedinCardEl = document.querySelector(".linkedin-link");
 
 // Default value for linkedin:
-const linkedinDefault = "www.linkedin.com";
+const linkedinDefault = linkedinCardEl.href;
+
 
 //Handler:
 function linkBottonLinkedin1 () {
