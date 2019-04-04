@@ -2,9 +2,11 @@
 
 console.log("collapsible runningggg");
 
-//Coger elementos arrow
+//Get the element arrow (class dropdown__down-arrow)
+const arrowEl = document.querySelector(".dropdown__down-arrow");
 
-//Listener en arrows del tipo "click"
+//Handler function
+// function collapsible
 
 //Function tipo toogle / or / if else
     //si estás oculto
@@ -13,3 +15,8 @@ console.log("collapsible runningggg");
     //si estás visible 
         // ocúlta panel (añadir clase hidden)
         // arrow botton (rotate 180º)
+
+//Lintener in arrows ("click")
+arrowEl.addEventListener("click",collapsible);
+
+
