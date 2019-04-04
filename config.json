@@ -17,6 +17,7 @@
 	},
 	"js": {
 		"src": [
+			"_src/assets/js/fill-email.js",
 			"_src/assets/js/main.js"
 		],
 		"dest": "public/assets/js/",
