@@ -71,5 +71,18 @@ height: 25px;
 }
 
 .card-link{
-    
+    text-decoration: none;
+    &:link{
+        color: $color-secondary-600;
+    }
+    // &:visited{
+    //     color: $color-secondary-600;
+    // }
+    // &:hover{
+    //     color: $color-secondary-600;
+    // }
+    // &:active{
+    //     color: $color-secondary-600;
+    // }
+
 }
