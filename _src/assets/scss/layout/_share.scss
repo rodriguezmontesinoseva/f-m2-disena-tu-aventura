@@ -12,11 +12,9 @@
 }
 
 .btn_share{
-    width: 200px;
+    width: 199px;
     height: 50px;
-    margin: 30px;
-    // outline: none;
-    // text-decoration: none;
+    margin: 10px 10px 25px;
     border: none;
     border-radius: 12px;
     box-shadow: 0 1px 6px 0 rgba($color-neutral-1000, 0.32);
@@ -43,9 +41,7 @@ height: 25px;
 .btn_twitter{
     width: 181px;
     height: 30px;
-    margin: 30px;
-    // outline: none;
-    // text-decoration: none;
+    margin: 14px;
     border: none;
     border-radius: 3px;
     box-shadow: 0 0px 4px 0 rgba($color-neutral-1000, 0.32);
@@ -53,7 +49,6 @@ height: 25px;
 
     text-align: center;    
     color: $color-neutral-0;
-    //text-transform: uppercase;
     font-family: $font-default;
     font-size: $font-size-S;
     font-weight: $font-weight-thin;
@@ -64,10 +59,15 @@ height: 25px;
 
 }
 
+.icon__twitter{
+    width: 20px;
+    height: 20px;
+    }
+
 .card-create{
     font-size: $font-size-L;
     font-weight: $font-weight-thick;
-    margin: 30px;
+    margin: 5px;
 }
 
 .card-link{
