@@ -17,14 +17,25 @@ function changeColourPreview(){
     if (option1ColourEl.checked){
         //meto la clase theme-green al div class: preview__card
         //cuando funcione ver si le puedo poner toggle
+        previewCardEl.classList.remove('theme-red');
+        previewCardEl.classList.remove('theme-blue');
+
         previewCardEl.classList.add('theme-green');
         console.log('option1 marcada');
 
     }else if(option2ColourEl.checked){
+        previewCardEl.classList.remove('theme-green');
+        previewCardEl.classList.remove('theme-blue');
+
         previewCardEl.classList.add('theme-red');
+
+
         console.log('option2 marcada');
 
     }else if(option3ColourEl.checked){
+        previewCardEl.classList.remove('theme-red');
+        previewCardEl.classList.remove('theme-green');
+
         previewCardEl.classList.add('theme-blue');
         console.log('option3 marcada');
 
