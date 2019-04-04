@@ -13,31 +13,42 @@ console.log(option3ColourEl);
 console.log(previewCardEl);
 
 function changeColourPreview(){
-
+// probar con un switch-select
     if (option1ColourEl.checked){
         //meto la clase theme-green al div class: preview__card
         //cuando funcione ver si le puedo poner toggle
-        previewCardEl.classList.remove('theme-red');
-        previewCardEl.classList.remove('theme-blue');
+        //intentar hacerlo con un metodo
+        previewCardEl.setAttribute('class', 'preview__card theme-green');
+        // previewCardEl.classList.remove('theme-red');
+        // previewCardEl.classList.remove('theme-blue');
 
-        previewCardEl.classList.add('theme-green');
+        // previewCardEl.classList.add('theme-green');
         console.log('option1 marcada');
+        console.log(previewCardEl);
 
     }else if(option2ColourEl.checked){
-        previewCardEl.classList.remove('theme-green');
-        previewCardEl.classList.remove('theme-blue');
+        previewCardEl.setAttribute('class', 'preview__card theme-red');
 
-        previewCardEl.classList.add('theme-red');
+        // previewCardEl.classList.remove('theme-green');
+        // previewCardEl.classList.remove('theme-blue');
+
+        // previewCardEl.classList.add('theme-red');
+        console.log(previewCardEl);
 
 
         console.log('option2 marcada');
 
     }else if(option3ColourEl.checked){
-        previewCardEl.classList.remove('theme-red');
-        previewCardEl.classList.remove('theme-green');
+        previewCardEl.setAttribute('class', 'preview__card theme-blue');
+        // meter preview__card theme- en una variable;
 
-        previewCardEl.classList.add('theme-blue');
+        // previewCardEl.classList.remove('theme-red');
+        // previewCardEl.classList.remove('theme-green');
+
+        // previewCardEl.classList.add('theme-blue');
         console.log('option3 marcada');
+        console.log(previewCardEl);
+
 
     }
 }
