@@ -14,7 +14,8 @@
     font-weight: $font-weight-thick; 
 
     @media all and (min-width:$mediaTablet){
-        margin-bottom: 60px;
+        margin-bottom: 30px;
+        margin-top: 10px;
     }
 }
 /* RESET Button in Preview Section */

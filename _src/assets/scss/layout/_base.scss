@@ -27,11 +27,21 @@ body{
     font-weight: 400;
     line-height: 1.4;
     color: $color-neutral-800;
-    background: linear-gradient(to bottom, $color-neutral-100, $color-neutral-0);
+    background: linear-gradient(to bottom, $color-neutral-100, $color-neutral-0)
+;
+
+    @media all and (min-width:768px) {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    }
 }
 .column-center {
     @media all and (min-width:$mediaTV) {
         max-width: 1500px;
         margin: 0 auto;
     }
+    
 }
