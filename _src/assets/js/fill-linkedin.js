@@ -9,24 +9,12 @@ const linkedinInputEl = document.querySelector("#linkedin");
 const linkedinCardEl = document.querySelector(".linkedin-link");
 
 // Default value for linkedin:
-const linkedinDefault = "#";
+const linkedinDefault = "www.linkedin.com";
 
 //Handler:
 function linkBottonLinkedin1 () {
-    linkedinCardEl.href = linkedinInputEl.value;
+    linkedinCardEl.href = linkedinInputEl.value || linkedinDefault;
 };
-
-// function linkBottonLinkedin2 () {
-//     linkedinCardEl.innerHTML = `
-//     <a href="${linkedinInputEl.value}" target="_blank"> 
-//         <img class="wrap-icon" src="assets/images/linkedin.svg" alt="linkedin">
-//     </a>
-//     ` || `
-//     <a href="${linkedinDefault}" target="_blank"> 
-//         <img class="wrap-icon" src="assets/images/linkedin.svg" alt="linkedin">
-//     </a>
-//     `
-// }
 
 //Listener. I have choosen a "change" event so it just interacts when the full url is filled.
 linkedinInputEl.addEventListener("change",linkBottonLinkedin1)
