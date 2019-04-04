@@ -16,7 +16,7 @@ else if (tlfElement = ''){
 }
 }
 
-tlfElement.addEventListener('keydown', phonenumber);
+tlfElement.addEventListener('keyup', phonenumber);
 
 
 
