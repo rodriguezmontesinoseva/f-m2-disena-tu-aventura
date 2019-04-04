@@ -6,8 +6,8 @@ const tflCardInitial = tlfCardImage.innerHTML;
 
 
 function phonenumber(){
-  if (tlfCardImage.href = tlfElement.value){
-    'tel:' + tlfCardImage.href === tlfElement.value;
+  if (tlfElement.value){
+       tlfCardImage.href = 'tel:' + tlfElement.value;
   }
 
 else if (tlfElement = ''){
