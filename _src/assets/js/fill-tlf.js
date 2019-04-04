@@ -1,20 +1,19 @@
 'use strict';
 
 const tlfElement = document.querySelector('#phoneNumber');
-const tlfCardImage = document.querySelector('.mobile-icon');
+const tlfCardImage = document.querySelector('#mobile-link');
+const tflCardInitial = tlfCardImage.innerHTML;
 
-function phonenumber(inputtxt)
-{
-  var phoneno = /^\d{10}$/;
-  if((tlfElement.value.match(phoneno))
-        {
-      return true;
-        }
-      else
-        {
-        alert("message");
-        return false;
-        }
+
+function phonenumber(){
+  if (tlfCardImage.href = tlfElement.value){
+    'tel:' + tlfCardImage.href === tlfElement.value;
+  }
+
+else if (tlfElement = ''){
+  tlfCardImage === tflCardInitial
+
+}
 }
 
 tlfElement.addEventListener('keydown', phonenumber);
