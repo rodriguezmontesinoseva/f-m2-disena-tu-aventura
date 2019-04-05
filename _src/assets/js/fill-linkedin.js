@@ -1,6 +1,6 @@
 'use strict';
 
-console.log('>> fill-linkedin running :)');
+// console.log('>> fill-linkedin running :)');
 
 // Element listener
 const linkedinInputEl = document.querySelector('#linkedin');
@@ -14,7 +14,7 @@ const linkedinDefault = linkedinCardEl.href;
 
 //Handler:
 function linkBottonLinkedin () {
-    console.log(linkedinInputEl.value);
+    // console.log(linkedinInputEl.value);
 
     linkedinCardEl.href = linkedinInputEl.value || linkedinDefault;
 };
