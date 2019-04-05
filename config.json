@@ -19,7 +19,7 @@
 		"src": [
       "_src/assets/js/main.js",
       "_src/assets/js/fill-name.js",
-
+      "_src/assets/js/fill-job.js",
 			"_src/assets/js/fill-email.js",
       "_src/assets/js/fill-linkedin.js",
       "_src/assets/js/fill-github.js"
