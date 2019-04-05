@@ -6,7 +6,12 @@ console.log("collapsible runningggg");
 const arrowEl = document.querySelector(".dropdown__down-arrow");
 
 //Handler function
-// function collapsible
+function collapsible() {
+    console.log("click!");
+    
+    // arrow botton (rotate 180º)
+    arrowEl.classList.toggle("dropdown__down-arrow--rotated");
+}
 
 //Function tipo toogle / or / if else
 //si estás oculto

@@ -38,6 +38,10 @@
     &__down-arrow {
         display: block;
         @include drawRectangle(16px, 18px);
+
+        &--rotated {
+            transform: rotate(180deg);
+        }
     }
 }
 
