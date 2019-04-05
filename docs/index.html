@@ -4,31 +4,49 @@
     <head>
         <meta charset="UTF-8">
         <title>Awesome profile-cards</title>
-        <link rel="icon" href="favicon.png" />
+        <link rel="icon" href="favicon.png">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="assets/css/main.css">
         <link href="https://fonts.googleapis.com/css?family=Merriweather|Open+Sans"
         rel="stylesheet">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     
     <body>
-        <div class="page">
-            <header class="page__header">
-                <img src="assets/images/download.svg" class="page-header_image" alt="logo Awesome profile-cards">
-                <div class="header_container-text">
-                     <h1 class="page-header_title">Crea tu tarjeta de visita</h1>
+        <header class="page__header">
+            <img src="assets/images/download.svg" class="page-header__image" alt="logo Awesome profile-cards">
+        </header>
+        <main class="page__main">
+            <div class="header_container-text">
+                 <h1 class="page-main__title">Crea tu tarjeta de visita</h1>
 
-                    <p class="page-header_subtitle">Crea mejores contactos profesionales de forma fácil y cómoda</p>
+                <p class="page-main__subtitle">Crea mejores contactos profesionales de forma fácil y cómoda</p>
+            </div>
+            <!--block of icons designs stuffed and shares -->
+            <div class="main-cont-icons">
+                <div class="main-item1-icons">
+                    <img class="icon" src="assets/images/ungroup.svg" alt=""> <span class="text-icons">Diseña</span>
+
                 </div>
-            </header>
-            <footer class="footer__page"> <small class="footer__copyright">Awesome profile-cards @2018</small>
+                <div class="main-item1-icons">
+                    <img class="icon" src="assets/images/keyboard.svg" alt=""> <span class="text-icons">Rellena</span>
+
+                </div>
+                <div class="main-item1-icons">
+                    <img class="icon" src="assets/images/share.svg" alt=""> <span class="text-icons">Comparte</span>
+
+                </div>
+            </div> <a href="cardmaker.html" class="main-button__start">Comenzar</a>
+
+        </main>
+        <footer class="footer__page">
+            <div class="footer__flex-wrapper column-center"> <small class="footer__copyright">Awesome profile-cards @2018</small>
 
                 <a
                 class="footer__link" href="https://adalab.es/" target="blank">
                     <img src="assets/images/logo-adalab.png" alt="Logo de Adalab" class="footer__image">
                     </a>
-            </footer>
-        </div>
+            </div>
+        </footer>
     </body>
 
 </html>

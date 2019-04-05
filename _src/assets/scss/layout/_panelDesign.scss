@@ -81,10 +81,12 @@
     &__indicator {
         // Dibujamos un radio a nuestro gusto
         position: absolute;
-        top: 2px;
+        top: 50%;
         left: 0;
+        transform: translateY(-50%);
         @include drawRectangle(17px, 17px);
         border: 1px solid $color-neutral-400;
+        border-radius: 50%;
     }
 }
 
@@ -143,5 +145,4 @@
     &-color9 {
         background-color: $color-secondary-870;
     }
-
 }

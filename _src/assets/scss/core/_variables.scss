@@ -25,6 +25,7 @@ $color-secondary-870: #A0C0CF;
 $color-neutral-0: #ffffff;
 $color-neutral-100: #f5f5f5;
 $color-neutral-200: #d8d8d8;
+$color-neutral-300: #c5c5c5;
 $color-neutral-400: #bbbbbb;
 $color-neutral-700: #6b6b6b;
 $color-neutral-800: #54585a;
@@ -32,19 +33,22 @@ $color-neutral-1000: #000000;
 
 // Mediaquery
 $mediaTablet: 768px;
+$mediaTV: 1600px;
 
 //Typography
-
 $font-default: 'Open Sans', sans-serif;
 $font-style-Merry: 'Merriweather', serif;
 $font-size-XS:12px;
+
 $font-size-S: 14px;
 $font-size-M: 16px;
 $font-size-L: 18px;
 $font-size-XL: 24px;
 
+$font-weight-regular: 400;
 $font-weight-thin: 500;
 $font-weight-thick: 600;
 $font-weight-thicker: 900;
+
 $text-upercase: uppercase;
 

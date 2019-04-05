@@ -4,42 +4,181 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="favicon.png">
         <title>Awesome profile-cards</title>
         <link rel="icon" href="favicon.png" />
+        <link href="https://fonts.googleapis.com/css?family=Merriweather|Open+Sans:400,500,600"
+        rel="stylesheet">
         <link rel="stylesheet" href="./assets/css/main.css">
     </head>
     
     <body>
         <!-- HEADER -->
-        <!-- <header class="page__header">
-    <img src="assets/images/download.svg" class="page-header_image" alt="logo Awesome profile-cards">
-    <div class="header_container-text">
-         <h1 class="page-header_title">Crea tu tarjeta de visita</h1>
+        <header class="app-header">
+            <div class="column-center">
+                 <h1>
+            <a href="index.html" class="link-home">
+                <img class="app-header__logo" src="./assets/images/logo-awesome-profile-cards.svg" alt="Awesome profile cards">
+            </a>
+        </h1>
 
-        <p class="page-header_subtitle">Crea mejores contactos profesionales de forma fácil y cómoda</p>
-    </div>
-</header> -->
+            </div>
+        </header>
         <!-- MAIN -->
-        <main class="main-content">
+        <main class="main-content column-center">
             <!-- Cuando creeis los parciales, a la sección principal que lo contiene
             ponerle las clases grid-item__card y grid-item__fill-fields respectivamente.
             Y que el primer parcial sea el que contiene la previsualización de la tarjeta
             -->
-            <!-- -->
+            <section class="preview__section grid-item__card">
+                <div class="preview__section--container">
+                    <button class="reset__button">
+                        <img class="trash-icon" src="assets/images/trash.svg" alt="imagen reset">Reset</button>
+                    <div class="preview__card">
+                        <div class="deco-rectangle__card"></div>
+                         <h2 class="full-name__card">Nombre Apellido</h2>
+
+                         <h3 class="ocupation__card">Front-end developer</h3>
+
+                        <div class="photo__preview"></div>
+                        <ul class="social__card--list">
+                            <li class="social__icons mobile-icon"><a> <img class="wrap-icon" src="assets/images/mobile.svg" alt="mobile"></a>
+
+                            </li>
+                            <li class="social__icons email-icon"><a> <img class="wrap-icon" src="assets/images/email.svg" alt="email"></a>
+
+                            </li>
+                            <li class="social__icons linkedin-icon"> <a> <img class="wrap-icon" src="assets/images/linkedin.svg" alt="linkedin"></a>
+
+                            </li>
+                            <li class="social__icons github-icon"> <a> <img class="wrap-icon" src="assets/images/github.svg" alt="github"></a>
+
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
             <section class="grid-item__fill-fields">
-                <!-- -->
-                <!-- -->
-                <!-- -->
+                <!-- Everything inside this section is a single form, so every panel should
+                be a partial inside it: -->
+                <form action="/signup" method="post" class="main-form">
+                    <section class="panel-design">
+                        <div class="panel-design__dropdown">
+                            <div class="title-image__wrapper">
+                                <img class="dropdown__icon-section" src="./assets/images/ungroup.svg"
+                                alt="">
+                                 <h2 class="dropdown__title">Diseña</h2>
+
+                            </div>
+                            <img class="dropdown__down-arrow" src="./assets/images/down-arrow.svg"
+                            alt="Abrir panel diseña">
+                        </div>
+                        <div class="panel-design__radios">
+                            <p class="radios__title">Colores</p>
+                            <div class="radios__picker">
+                                <label class="control__text radios-text" for="option-color-1">
+                                    <input class="control__radio radios-buttons" id="option-color-1" type="radio"
+                                    value="color-option1" name="color-option" checked/> <span class="control__indicator"></span>
+ <span class="box-wrapper">
+                    <span class="box box-color1"></span>
+ <span class="box box-color2"></span>
+
+                                    <span
+                                    class="box box-color3"></span>
+                                        </span>
+                                </label>
+                                <label class="control__text radios-text" for="option-color-2">
+                                    <input class="control__radio radios-buttons" id="option-color-2" type="radio"
+                                    value="color-option2" name="color-option" /> <span class="control__indicator"></span>
+ <span class="box-wrapper">
+                    <span class="box box-color4"></span>
+ <span class="box box-color5"></span>
+
+                                    <span
+                                    class="box box-color6"></span>
+                                        </span>
+                                </label>
+                                <label class="control__text radios-text" for="option-color-3">
+                                    <input class="control__radio radios-buttons" id="option-color-3" type="radio"
+                                    value="color-option3" name="color-option" /> <span class="control__indicator"></span>
+ <span class="box-wrapper">
+                    <span class="box box-color7"></span>
+ <span class="box box-color8"></span>
+
+                                    <span
+                                    class="box box-color9"></span>
+                                        </span>
+                                </label>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- Inside the mainApp, this is the second panel part of a single form
+                    -->
+                    <section class="panel-fill">
+                        <div class="panel-fill__dropdown">
+                            <div class="title-image__wrapper">
+                                <img class="dropdown__icon-section" src="./assets/images/keyboard.svg"
+                                alt="">
+                                 <h2 class="dropdown__title">Rellena</h2>
+
+                            </div>
+                            <img class="dropdown__down-arrow" src="./assets/images/down-arrow.svg"
+                            alt="Abrir panel rellena">
+                        </div>
+                        <fieldset class="panel-fill__form">
+                            <div class="dropdown__item">
+                                <label class="item__label" for="fullName">Nombre completo</label>
+                                <input class="item__info" type="text" id="fullName"
+                                placeholder="Ej: Monster Terribilus" name="fullName" required>
+                            </div>
+                            <div class="dropdown__item">
+                                <label class="item__label" for="rol">Puesto</label>
+                                <input class="item__info" type="text" id="rol" placeholder="Ej: Front-end"
+                                name="rol" required>
+                            </div>
+                            <div class="dropdown__item">
+                                <label class="item__label" for="personalImage">Imagen de perfil</label>
+                                <div class="item__info--image-container">
+                                    <button class="item__info--button">Añadir imagen</button>
+                                    <img class="item__info--thumbnail" src="https://via.placeholder.com/30x30"
+                                    alt="">
+                                </div>
+                            </div>
+                            <div class="dropdown__item">
+                                <label class="item__label" for="email">Email</label>
+                                <input class="item__info" type="email" id="email" placeholder="dontBeScare@gmail.com"
+                                name="email" required>
+                            </div>
+                            <div class="dropdown__item">
+                                <label class="item__label" for="phoneNumber">Teléfono</label>
+                                <input class="item__info" type="tel" id="phoneNumber"
+                                placeholder="666-66-66-66" name="phoneNumber" required>
+                            </div>
+                            <div class="dropdown__item">
+                                <label class="item__label" for="linkedin">Linkedin</label>
+                                <input class="item__info" type="url" id="linkedin" placeholder="linkedin.com/monsterYey"
+                                name="linkedin">
+                            </div>
+                            <div class="dropdown__item">
+                                <label class="item__label" for="github">GitHub</label>
+                                <input class="item__info" type="text" id="github" placeholder="@monsterYey"
+                                name="github">
+                            </div>
+                        </fieldset>
+                    </section>
+                </form>
             </section>
         </main>
         <!-- FOOTER -->
-        <!-- <footer class="footer__page"> <small class="footer__copyright">Awesome profile-cards @2018</small>
+        <footer class="footer__page">
+            <div class="footer__flex-wrapper column-center"> <small class="footer__copyright">Awesome profile-cards @2018</small>
 
-    <a
-    class="footer__link" href="https://adalab.es/" target="blank">
-        <img src="assets/images/logo-adalab.png" alt="Logo de Adalab" class="footer__image">
-        </a>
-</footer> -->
+                <a
+                class="footer__link" href="https://adalab.es/" target="blank">
+                    <img src="assets/images/logo-adalab.png" alt="Logo de Adalab" class="footer__image">
+                    </a>
+            </div>
+        </footer>
     </body>
 
 </html>
