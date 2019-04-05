@@ -46,6 +46,7 @@ height: 25px;
     border-radius: 3px;
     box-shadow: 0 0px 4px 0 rgba($color-neutral-1000, 0.32);
     background-color: $color-secondary-770;
+    padding-right: 9px;
 
     text-align: center;    
     color: $color-neutral-0;
@@ -67,11 +68,12 @@ height: 25px;
 .card-create{
     font-size: $font-size-L;
     font-weight: $font-weight-thick;
-    margin: 5px;
+    margin: 20px;
 }
 
 .card-link{
     text-decoration: none;
+    font-size: $font-size-XS;
     &:link{
         color: $color-secondary-600;
     }
