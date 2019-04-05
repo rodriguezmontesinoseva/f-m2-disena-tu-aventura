@@ -63,6 +63,7 @@
     &__info {
         height: 30px;
         margin-bottom: 19px;
+        padding-left: 10px;
 
         border: 1px solid $color-primary-200;
     }
@@ -86,5 +87,4 @@
 
 input::placeholder {
     color: $color-neutral-300;
-    padding-left: 10px;
 }
