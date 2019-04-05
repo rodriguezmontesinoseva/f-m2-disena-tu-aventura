@@ -9,14 +9,14 @@ const arrowEl = document.querySelector(".dropdown__down-arrow");
 // function collapsible
 
 //Function tipo toogle / or / if else
-    //si estás oculto
-        //muéstra panel (añadir clase show)
-        //arrow top (default)
-    //si estás visible 
-        // ocúlta panel (añadir clase hidden)
-        // arrow botton (rotate 180º)
+//si estás oculto
+//muéstra panel (añadir clase show)
+//arrow top (default)
+//si estás visible 
+// ocúlta panel (añadir clase hidden)
+// arrow botton (rotate 180º)
 
 //Lintener in arrows ("click")
-arrowEl.addEventListener("click",collapsible);
+arrowEl.addEventListener("click", collapsible);
 
 
