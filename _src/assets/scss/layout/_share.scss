@@ -1,0 +1,80 @@
+
+.align_share{
+    display:flex;
+    justify-content: center;
+
+}
+
+.align_share_text{
+    flex-direction: column;
+    text-align: center;
+
+}
+
+.btn_share{
+    width: 199px;
+    height: 50px;
+    margin: 10px 10px 25px;
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 1px 6px 0 rgba($color-neutral-1000, 0.32);
+    background-color: $color-secondary-600;
+
+    text-align: center;    
+    color: $color-neutral-0;
+    text-transform: uppercase;
+    font-family: $font-default;
+    font-size: $font-size-L;
+    font-weight: $font-weight-thick;
+
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+.icon__id-card{
+width: 25px;
+height: 25px;
+}
+
+.btn_twitter{
+    width: 181px;
+    height: 30px;
+    margin: 14px;
+    border: none;
+    border-radius: 3px;
+    box-shadow: 0 0px 4px 0 rgba($color-neutral-1000, 0.32);
+    background-color: $color-secondary-770;
+    padding-right: 9px;
+
+    text-align: center;    
+    color: $color-neutral-0;
+    font-family: $font-default;
+    font-size: $font-size-S;
+    font-weight: $font-weight-thin;
+
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+.icon__twitter{
+    width: 20px;
+    height: 20px;
+    }
+
+.card-create{
+    font-size: $font-size-L;
+    font-weight: $font-weight-thick;
+    margin: 20px;
+}
+
+.card-link{
+    text-decoration: none;
+    font-size: $font-size-XS;
+    &:link{
+        color: $color-secondary-600;
+    }
+}
