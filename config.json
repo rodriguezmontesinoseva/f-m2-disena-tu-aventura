@@ -18,16 +18,13 @@
 	"js": {
 		"src": [
       "_src/assets/js/main.js",
-<<<<<<< HEAD
-      "_src/assets/js/fill-colours.js"
-=======
+      "_src/assets/js/fill-colours.js",
       "_src/assets/js/fill-name.js",
       "_src/assets/js/fill-job.js",
 			"_src/assets/js/fill-email.js",
       "_src/assets/js/fill-linkedin.js",
       "_src/assets/js/fill-github.js",
       "_src/assets/js/fill-tlf.js"
->>>>>>> master
 		],
 		"dest": "public/assets/js/",
     "dist": "docs/assets/js/"
