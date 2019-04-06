@@ -5,7 +5,6 @@
 const emailLink = document.querySelector('#email');
 const emailPreviewLink = document.querySelector('.email__card');
 
-
 function changeEmailOnCard (){
     const emailHref = emailLink.value;
     // Si no hay e-mail, el href no se genera //
