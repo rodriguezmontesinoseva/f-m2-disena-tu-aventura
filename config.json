@@ -17,7 +17,7 @@
 	},
 	"js": {
 		"src": [
-      "_src/assets/js/main.js"
+      "_src/assets/js/main.js",
       "_src/assets/js/fill-colours.js"
 		],
 		"dest": "public/assets/js/",
