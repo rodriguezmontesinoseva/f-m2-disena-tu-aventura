@@ -89,7 +89,7 @@
         border: solid 2px $color-secondary-720;
     }
     .wrap-icon{
-        fill: $color-secondary-710;
+        fill: $color-secondary-700;
     }
 }
 //* Red *//
@@ -104,6 +104,9 @@
     .social__icons {
         border: solid 2px $color-secondary-670;
     }
+    .wrap-icon{
+        fill: $color-secondary-650;
+    }
 }
 //* Blue *//
 .theme-blue {
@@ -116,5 +119,8 @@
     }
     .social__icons {
         border: solid 2px $color-secondary-870;
+    }
+    .wrap-icon{
+        fill: $color-secondary-850;
     }
 }
