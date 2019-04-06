@@ -1,10 +1,8 @@
-'use strict';
 //A color theme is selected in the DESIGN section and the preview is updated with those colors in real time.
 
 const option1ColourEl = document.querySelector('#option-color-1');
 const option2ColourEl = document.querySelector('#option-color-2');
 const option3ColourEl = document.querySelector('#option-color-3');
-//I bring the object with class .preview__card containing the preview
 const previewCardEl = document.querySelector('.preview__card');
 
 //function asking which option-button is marked and loads that range of colors into the preview
