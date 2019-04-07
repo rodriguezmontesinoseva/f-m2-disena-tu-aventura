@@ -21,8 +21,8 @@ function addGreenBorderifFilled(){
   if (tlfCardEl.href){
     liElementTlf.classList.add('border__ifpatterncorrect');
   }
-  else if (tlfInputEl = ''){
-    liElementTlf.classList.remove('border__ifpatterncorrect');
+  else {
+    liElementTlf.classList.remove('border__ifpatterncorrect');;
   }
   }
  
