@@ -7,9 +7,11 @@ console.log("collapsible runningggg");
 // Let's get it by id instead
 const arrowElDesign = document.getElementById("dropdown__down-arrow--design");
 const arrowElFill = document.getElementById("dropdown__down-arrow--fill");
+const arrowElShare = document.getElementById("dropdown__down-arrow--share");
 
 const panelDesignEl = document.querySelector(".panel-design__radios");
 const panelFillEl = document.querySelector(".panel-fill__form");
+const panelShareEl = document.querySelector(".align_share");
 
 
 //Función general
@@ -35,5 +37,5 @@ function collapsiblePanel(event) {
 // Add listeners:
 arrowElDesign.addEventListener("click", collapsiblePanel);
 arrowElFill.addEventListener("click", collapsiblePanel);
-
+arrowElShare.addEventListener("click", collapsiblePanel);
 
