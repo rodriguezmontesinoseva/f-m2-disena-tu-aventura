@@ -1,22 +1,42 @@
 'use strict';
 
-const tlfElement = document.querySelector('#phoneNumber');
-const tlfCardImage = document.querySelector('#mobile-link');
-const tflCardInitial = tlfCardImage.innerHTML;
+// Element listener
+const tlfInputEl = document.querySelector('#phoneNumber');
 
+// Element target
+const tlfCardEl = document.querySelector('#mobile-link');
 
-function phonenumber(){
-  if (tlfElement.value){
-       tlfCardImage.href = 'tel:' + tlfElement.value;
+// Default value for telefone:
+const tflCardDefault = tlfCardEl.href;
+
+const tlfInputDefault = tlfInputEl.value
+
+// List element - telephone
+
+const liElementTlf = document.querySelector('.mobile-icon');
+
+// Add color to preview 
+function addGreenBorderifFilled(){
+
+  if (tlfCardEl.href){
+    liElementTlf.classList.add('border__ifpatterncorrect');
   }
+  else if (tlfInputEl = ''){
+    liElementTlf.classList.remove('border__ifpatterncorrect');
+  }
+  }
+ 
 
-else if (tlfElement = ''){
-  tlfCardImage === tflCardInitial
 
-}
-}
+//Handler:
+function addPhoneNumber(){
 
-tlfElement.addEventListener('keyup', phonenumber);
+tlfCardEl.href = 'tel:' + tlfInputEl.value || tflCardDefault;
+addGreenBorderifFilled();
+};
+
+//Listener for the phone input element
+tlfInputEl.addEventListener('keyup', addPhoneNumber);
 
 
 
