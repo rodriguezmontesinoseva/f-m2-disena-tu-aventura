@@ -3,14 +3,25 @@
 console.log("collapsible runningggg");
 
 //Get the element arrow (class dropdown__down-arrow)
-const arrowEl = document.querySelector(".dropdown__down-arrow");
+// const arrowEl = document.querySelector(".dropdown__down-arrow");
+// Let's get it by id instead
+const arrowElDesign = document.getElementById("dropdown__down-arrow--design");
+const arrowElFill = document.getElementById("dropdown__down-arrow--fill");
+
 
 //Handler function
-function collapsible() {
+function collapsibleDesign() {
     console.log("click!");
     
     // arrow botton (rotate 180º)
-    arrowEl.classList.toggle("dropdown__down-arrow--rotated");
+    arrowElDesign.classList.toggle("dropdown__down-arrow--rotated");
+}
+
+function collapsibleFill() {
+    console.log("click!");
+    
+    // arrow botton (rotate 180º)
+    arrowElFill.classList.toggle("dropdown__down-arrow--rotated");
 }
 
 //Function tipo toogle / or / if else
@@ -22,6 +33,7 @@ function collapsible() {
 // arrow botton (rotate 180º)
 
 //Lintener in arrows ("click")
-arrowEl.addEventListener("click", collapsible);
+arrowElDesign.addEventListener("click", collapsibleDesign);
+arrowElFill.addEventListener("click", collapsibleFill);
 
 
