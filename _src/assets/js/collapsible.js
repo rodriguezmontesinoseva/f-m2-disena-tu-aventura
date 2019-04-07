@@ -12,42 +12,28 @@ const panelDesignEl = document.querySelector(".panel-design__radios");
 const panelFillEl = document.querySelector(".panel-fill__form");
 
 
-//Handler function
-function collapsibleDesign() {
-    console.log("click!");
-    
-    // arrow botton (rotate 180º)
-    arrowElDesign.classList.toggle("dropdown__arrow--up");
+//Función general
+function collapsiblePanel(event) {    
+    const currentArrow = event.currentTarget;
+    //Buscamos en su árbol familiar, para llegar desde la flecha al elemento panel:
+    // console.dir(currentArrow);
 
-    arrowElDesign.classList.toggle("dropdown__arrow--down");
+    // Add toogle up and down arrow
+    currentArrow.classList.toggle("dropdown__arrow--up");
+    currentArrow.classList.toggle("dropdown__arrow--down");
 
-    panelDesignEl.classList.toggle("panel--close"); 
+    // Vamos desde la flecha a la madre contenedora
+    const parentElArrow = currentArrow.parentElement;
 
-    //Function tipo toogle / or / if else
-//si estás oculto
-//muéstra panel (añadir clase show)
-//arrow top (default)
-//si estás visible 
-// ocúlta panel (añadir clase hidden)
-// arrow botton (rotate 180º)
+    // Buscamos la tía de la flecha jajaja:
+    const nextElSibling = parentElArrow.nextElementSibling;
 
+    //Add toogle to show or hide the panel
+    nextElSibling.classList.toggle("panel--close"); 
 }
 
-function collapsibleFill() {
-    console.log("click!");
-    
-    // arrow botton (rotate 180º)
-    arrowElFill.classList.toggle("dropdown__arrow--up");
-
-    arrowElFill.classList.toggle("dropdown__arrow--down");
-
-    panelFillEl.classList.toggle("panel--close"); 
-}
-
-
-
-//Lintener in arrows ("click")
-arrowElDesign.addEventListener("click", collapsibleDesign);
-arrowElFill.addEventListener("click", collapsibleFill);
+// Add listeners:
+arrowElDesign.addEventListener("click", collapsiblePanel);
+arrowElFill.addEventListener("click", collapsiblePanel);
 
 
