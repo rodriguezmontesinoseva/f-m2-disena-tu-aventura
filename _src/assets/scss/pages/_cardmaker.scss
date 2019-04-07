@@ -1,14 +1,18 @@
 .main-content {
-    background-color: $color-neutral-100;
+    background: linear-gradient(to bottom, $color-neutral-100, $color-neutral-0);
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(2, auto);
     @media all and (min-width:$mediaTablet) {
+        width: 100%;
         grid-gap: 30px;
         padding: 23px 40px;
-        grid-template-columns: 1fr minmax(329px, 45%);
+        grid-template-columns: 313px 1fr;
         grid-template-rows: auto;
         grid-template-areas: "design card";
+    }
+    @media all and (min-width:$mediaTV) {
+        padding: 23px 0;
     }
 }
 .grid {

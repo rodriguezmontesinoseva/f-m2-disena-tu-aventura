@@ -1,5 +1,7 @@
+//* Default styles for preview card*//
+
 .preview__section {
-    background: linear-gradient(top, rgba(191,205,208,1) 0%, rgba(221,233,237,1) 100%);
+    background: linear-gradient(to top, #e17334, #e3844f, #e39569, #e2a583, #dfb59e);
     padding: 0 40px 40px 40px;
     font-family: 'Open Sans', sans-serif;
     display:flex;
@@ -20,7 +22,7 @@
 .photo__preview {
     width: 240px;
     height: 200px;
-    background-image: url(https://via.placeholder.com/240x200);
+    background-image: url(../images/user-photo-default.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -64,4 +66,45 @@
 .wrap-icon{
     max-width: 18px;
     padding-top: 5px;
+}
+//* Themes for Javascript *//
+
+//* Green *//
+.theme-green {
+    .full-name__card{
+        color: $color-primary-800;
+    }
+    .deco-rectangle__card{
+        border-left: solid 5px $color-primary-200;
+        border-top: solid 45px $color-primary-200;
+    }
+    .social__icons {
+        border: solid 2px $color-primary-200;
+    }
+}
+//* Red *//
+.theme-red {
+    .full-name__card{
+        color: $color-secondary-650;
+    }
+    .deco-rectangle__card{
+        border-left: solid 5px $color-secondary-670;
+        border-top: solid 45px $color-secondary-670;
+    }
+    .social__icons {
+        border: solid 2px $color-secondary-670;
+    }
+}
+//* Blue *//
+.theme-blue {
+    .full-name__card{
+        color: $color-secondary-850;
+    }
+    .deco-rectangle__card{
+        border-left: solid 5px $color-secondary-870;
+        border-top: solid 45px $color-secondary-870;
+    }
+    .social__icons {
+        border: solid 2px $color-secondary-870;
+    }
 }

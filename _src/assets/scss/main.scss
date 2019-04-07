@@ -2,22 +2,27 @@
 
 // Core ones:
 @import 'core/variables';
-@import './core/mixins';
+@import 'core/mixins';
 
 // Layout ones:
 @import 'layout/base';
-@import 'layout/footer';
 @import 'layout/headerLan';
-@import 'layout/headerApp';
 @import 'layout/mainLan';
+@import 'layout/footer';
+
+@import 'layout/headerApp';
 @import 'layout/preview';
+
+@import 'layout/panelDesign';
+@import 'layout/panelFillApp';
 @import 'layout/share';
 
-
 // Components
-@import './components/panelDesign';
 @import 'components/buttons';
 
+// Javascrip associated styles
+@import 'js-styles/collapsible-animation';
+
 // Pages
-@import './pages/cardmaker';
+@import 'pages/cardmaker';
 

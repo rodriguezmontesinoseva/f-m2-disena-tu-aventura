@@ -1,1 +1,1 @@
-"use strict";console.log(">> Ready :)");
+"use strict";console.log(">> Ready :)");const nameInputEl=document.querySelector("#fullName"),cardNameEl=document.querySelector(".full-name__card "),defaultName=cardNameEl.innerHTML;function printName(){console.log("handler is working"),nameInputEl.value?cardNameEl.innerHTML=nameInputEl.value:cardNameEl.innerHTML=defaultName}function printName3(){cardNameEl.innerHTML=nameInputEl.value||defaultName}nameInputEl.addEventListener("keyup",printName2);

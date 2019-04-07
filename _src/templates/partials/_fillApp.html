@@ -1,0 +1,51 @@
+<!-- Inside the mainApp, this is the second panel part of a single form -->
+<section class="panel-fill">
+
+    <div class="panel-fill__dropdown">
+        <div class="title-image__wrapper">
+            <img class="dropdown__icon-section" src="./assets/images/keyboard.svg" alt="">
+            <h2 class="dropdown__title">Rellena</h2>
+        </div>
+        <img class="dropdown__arrow--down" id="dropdown__down-arrow--fill" src="./assets/images/down-arrow.svg" alt="Abrir panel rellena">
+    </div>
+
+    <fieldset class="panel-fill__form panel--close">
+        <div class="dropdown__item">
+            <label class="item__label" for="fullName">Nombre completo</label>
+            <input class="item__info" type="text" id="fullName" placeholder="Ej: Monster Terribilus" name="fullName" required>    
+        </div>
+
+        <div class="dropdown__item">
+            <label class="item__label" for="rol">Puesto</label>
+            <input class="item__info"  type="text" id="rol" placeholder="Ej: Front-end" name="rol" required>    
+        </div>
+
+        <div class="dropdown__item">
+            <label class="item__label" for="personalImage">Imagen de perfil</label>
+            <div class="item__info--image-container">
+                <button class="item__info--button">Añadir imagen</button>
+                <img class="item__info--thumbnail" src="https://via.placeholder.com/30x30" alt="">
+            </div>
+        </div>
+
+        <div class="dropdown__item">
+            <label class="item__label" for="email">Email</label>
+            <input class="item__info" type="email" id="email" placeholder="dontBeScare@gmail.com" name="email" required>    
+        </div>
+
+        <div class="dropdown__item">
+            <label class="item__label"  for="phoneNumber">Teléfono</label>
+            <input class="item__info"  type="tel" id="phoneNumber" placeholder="666-66-66-66" name="phoneNumber" required>    
+        </div>
+
+        <div class="dropdown__item">
+            <label class="item__label"  for="linkedin">Linkedin</label>
+            <input class="item__info"  type="url" id="linkedin" placeholder="linkedin.com/monsterYey" name="linkedin">    
+        </div>
+
+        <div class="dropdown__item">
+            <label class="item__label"  for="github">GitHub</label>
+            <input class="item__info"  type="text" id="github" placeholder="@monsterYey" name="github"> 
+        </div>
+    </fieldset>
+</section>
