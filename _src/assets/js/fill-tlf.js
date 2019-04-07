@@ -19,10 +19,10 @@ const liElementTlf = document.querySelector('.mobile-icon');
 function addGreenBorderifFilled(){
 
   if (tlfCardEl.href){
-    liElementTlf.classList.add('border__ifpatterncorrect');
+    liElementTlf.classList.add('boxShadow__tlfIcon-IfInputIsFIlled');
   }
   else {
-    liElementTlf.classList.remove('border__ifpatterncorrect');;
+    liElementTlf.classList.remove('boxShadow__tlfIcon-IfInputIsFIlled');;
   }
   }
  
