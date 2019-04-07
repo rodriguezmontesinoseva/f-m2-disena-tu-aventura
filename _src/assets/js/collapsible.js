@@ -42,7 +42,6 @@ arrowElDesign.addEventListener("click", collapsiblePanel);
 arrowElFill.addEventListener("click", collapsiblePanel);
 arrowElShare.addEventListener("click", collapsiblePanel);
 
-
 //Cuando hagamos click en el botón naranja de Crear Tarjeta, nos tiene que mostrar la sección de Twitter.
 
 //Coger el elemento botón
@@ -62,7 +61,6 @@ function handlerCreateCard(event) {
     btnShareEl.disabled = true;
     btnShareEl.classList.toggle("btn_share--disabled");
 }
-
 
 //Listener al botón
 btnShareEl.addEventListener("click", handlerCreateCard);
