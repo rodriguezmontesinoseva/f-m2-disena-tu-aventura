@@ -1,6 +1,10 @@
 //Classes for open and close the panels:
-.panel--open{
+.panel--openFlex{
     display: flex;    
+}
+
+.panel--openBlock{
+    display: block;    
 }
 
 .panel--close{

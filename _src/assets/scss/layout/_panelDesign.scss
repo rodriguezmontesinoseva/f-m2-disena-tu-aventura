@@ -35,13 +35,15 @@
         font-weight: 600;
         text-transform: uppercase;
     }
-    &__down-arrow {
+    &__arrow--down {
         display: block;
         @include drawRectangle(16px, 18px);
+    }
 
-        &--rotated {
-            transform: rotate(180deg);
-        }
+    &__arrow--up {
+        display: block;
+        @include drawRectangle(16px, 18px);
+        transform: rotate(180deg);
     }
 }
 
