@@ -32,6 +32,9 @@ function collapsiblePanel(event) {
 
     //Add toogle to show or hide the panel
     nextElSibling.classList.toggle("panel--close"); 
+
+    //Que en cualquier caso, siempre cierre el panel de Twitter
+    twtPanelEl.classList.add("panel--close"); 
 }
 
 // Add listeners:
@@ -50,10 +53,13 @@ const twtPanelEl = document.querySelector(".panel__twitter");
 //Añadir handler que hace 2 cosas:
 function handlerCreateCard(event) {
     event.preventDefault();
-    console.log("click click");
-}
+
     //Mostrar/ocultar panel mediante toggle
+    //Add toogle to show or hide the panel
+    twtPanelEl.classList.toggle("panel--close"); 
     //Mostrar el botón como deshabilitado (grisecillo) 
+}
+
 
 //Listener al botón
 btnShareEl.addEventListener("click", handlerCreateCard);
