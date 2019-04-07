@@ -39,3 +39,21 @@ arrowElDesign.addEventListener("click", collapsiblePanel);
 arrowElFill.addEventListener("click", collapsiblePanel);
 arrowElShare.addEventListener("click", collapsiblePanel);
 
+
+//Cuando hagamos click en el botón naranja de Crear Tarjeta, nos tiene que mostrar la sección de Twitter.
+
+//Coger el elemento botón
+const btnShareEl = document.querySelector(".btn_share");
+//Coger el elemento panel twitter
+const twtPanelEl = document.querySelector(".panel__twitter");
+
+//Añadir handler que hace 2 cosas:
+function handlerCreateCard(event) {
+    event.preventDefault();
+    console.log("click click");
+}
+    //Mostrar/ocultar panel mediante toggle
+    //Mostrar el botón como deshabilitado (grisecillo) 
+
+//Listener al botón
+btnShareEl.addEventListener("click", handlerCreateCard);
