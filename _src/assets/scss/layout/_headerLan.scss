@@ -1,14 +1,9 @@
 .page__header{
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: center;
-    margin: 100px 30px 0px 30px;
+    margin: 100px auto 0px;
 
-        @media all and (min-width:$mediaTablet){
-            margin: 0px 175px 0px 175px;
-            padding-top:100px;
-        }
+    @media all and (min-width:$mediaTablet){
+        margin: 150px auto 0px;
+    }
 }
 
 .page-header__image{
