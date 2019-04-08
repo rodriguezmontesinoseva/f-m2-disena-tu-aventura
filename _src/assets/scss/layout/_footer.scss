@@ -31,6 +31,9 @@
     color: $color-neutral-700;
     opacity: 0.5;
     margin-bottom: 10px;
+    @media all and (min-width:$mediaTablet) {
+        margin-bottom: 0;
+    }
 }
 
 .footer__link {
