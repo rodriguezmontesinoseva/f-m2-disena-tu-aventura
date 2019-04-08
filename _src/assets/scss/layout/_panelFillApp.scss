@@ -1,26 +1,8 @@
-// Habría que cambiar el nombre de la clase a ".panel" simplemente:
-.panel-fill {
-    color: $color-neutral-800;
-    border-bottom: 1px solid $color-neutral-200;
-
-    &__dropdown {    
-        margin-top: 10px;    
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        padding-bottom: 10px;
-    }
-
-    &__form {
+.panel {
+    &__fill-form {
         padding: 15px 0 9px;
     }
 }
-
-// Not working:
-// svg path {
-//     color: red !important;
-// }
 
 .title-image__wrapper {      
     display: flex;
@@ -30,22 +12,6 @@
 }
 
 .dropdown {
-    &__icon-section {
-        display: block;
-        @include drawRectangle(21px, 18px);
-        margin-right: 12px;
-    }
-    &__title {
-        font-size: $font-size-L;
-        font-weight: $font-weight-thick;
-        text-transform: $text-upercase;
-    }
-    &__down-arrow {
-        // color: currentColor;
-        display: block;
-        @include drawRectangle(16px, 18px);
-    }
-
     &__item {
         display: flex;
         flex-direction: column;

@@ -38,7 +38,6 @@
 }
 
 // Landing page, section main, icons
-//responsive it must be given to the central column
 
 .main-cont-icons{
     border: solid 2px rgba($color: $color-secondary-600, $alpha: 0.3);
@@ -47,7 +46,7 @@
     justify-content: space-around;
     align-items: center;
     margin: 25px;
-    
+    width: 100%;
 }
 
 .main-item1-icons{
@@ -60,13 +59,19 @@
 
 .icon{
   width: 26px;
+  @media all and (min-width:$mediaTablet){
+    width: 32px;
+}
 }
 
 .text-icons{
    font-family: $font-default;
-   font-size: 13px;
+   font-size: $font-size-XS;
+
+   @media all and (min-width:$mediaTablet){
+        font-size:$font-size-M;
+    }
 }
-// the color of the icons I have given with the property "fill" inside the svg
 
 
 

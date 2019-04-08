@@ -9,7 +9,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 20px;
+    padding-bottom: 10px;
     padding-top: 10px;
 
         @media all and (min-width:$mediaTablet) {
@@ -20,8 +20,9 @@
 
     }
     @media all and (min-width:$mediaTV) {
-        padding-left: 0;
-        padding-right: 0;
+     
+        padding-top: 30px;
+
     } 
     
 }

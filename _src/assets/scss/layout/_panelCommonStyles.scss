@@ -1,0 +1,36 @@
+.panel {
+    color: $color-neutral-800;
+    border-bottom: 1px solid $color-neutral-200;
+    &__dropdown {        
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding-bottom: 10px;
+        padding-top: 10px;
+    }
+}
+
+.dropdown {
+    &__icon-section {
+        display: block;
+        @include drawRectangle(21px, 18px);
+        margin-right: 12px;
+    }
+    &__title {
+        font-size: $font-size-L;
+        font-weight: $font-weight-thick;
+        text-transform: $text-upercase;
+    }
+    &__arrow--down {
+        display: block;
+        @include drawRectangle(16px, 18px);
+        cursor: pointer;
+    }
+    &__arrow--up {
+        display: block;
+        @include drawRectangle(16px, 18px);
+        transform: rotate(180deg);
+        cursor: pointer;
+    }
+}
