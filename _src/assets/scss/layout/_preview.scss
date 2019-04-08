@@ -37,14 +37,18 @@
 }
 .full-name__card {
     padding: 21px 20px 0 20px;
-    font-size: 18px;
+    font-family: $font-style-Montserrat;
+    font-size: $font-size-L;
+    font-weight: $font-weight-strong-thick;
     line-height: 20px;
     text-transform: capitalize;
     color: $color-primary-800;
 }
 .ocupation__card {
     padding: 4px 20px 10px 20px;
-    font-size: 16px;
+    font-family: $font-style-Montserrat;
+    font-size: $font-size-M;
+    font-weight: $font-weight-regular;
     line-height: 20px;
     color: $color-neutral-800;
 }
@@ -65,21 +69,28 @@
 }
 .wrap-icon{
     max-width: 18px;
+    max-height: 22px;
     padding-top: 5px;
+    fill: $color-secondary-700;
 }
+
+
 //* Themes for Javascript *//
 
 //* Green *//
 .theme-green {
     .full-name__card{
-        color: $color-primary-800;
+        color: $color-secondary-700;
     }
     .deco-rectangle__card{
-        border-left: solid 5px $color-primary-200;
-        border-top: solid 45px $color-primary-200;
+        border-left: solid 5px $color-secondary-720;
+        border-top: solid 45px $color-secondary-720;
     }
     .social__icons {
-        border: solid 2px $color-primary-200;
+        border: solid 2px $color-secondary-720;
+    }
+    .wrap-icon{
+        fill: $color-secondary-700;
     }
 }
 //* Red *//
@@ -94,6 +105,9 @@
     .social__icons {
         border: solid 2px $color-secondary-670;
     }
+    .wrap-icon{
+        fill: $color-secondary-650;
+    }
 }
 //* Blue *//
 .theme-blue {
@@ -106,5 +120,8 @@
     }
     .social__icons {
         border: solid 2px $color-secondary-870;
+    }
+    .wrap-icon{
+        fill: $color-secondary-850;
     }
 }
