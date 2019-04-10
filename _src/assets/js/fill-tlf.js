@@ -1,5 +1,3 @@
-'use strict';
-
 const tlfElement = document.querySelector('#phoneNumber');
 const tlfCardImage = document.querySelector('#mobile-link');
 const tflCardInitial = tlfCardImage.innerHTML;

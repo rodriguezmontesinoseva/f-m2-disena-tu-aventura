@@ -1,7 +1,3 @@
-'use strict';
-
-// console.log('>> fill-linkedin running :)');
-
 // Element listener
 const linkedinInputEl = document.querySelector('#linkedin');
 
