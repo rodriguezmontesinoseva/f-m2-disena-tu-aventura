@@ -3,13 +3,13 @@
 
 const userData = {
     //from design, a number between 1-3, that relates with the 3 colour palettes
-    palette: "",
+    palette: 1,
     name: "",
     job: "",
     phone: "",
     email: "",
     linkedin: "",
-    GitHub: "",
+    gitHub: "",
     photo: "",
 }
 
@@ -21,6 +21,6 @@ const ExUserData = {
     phone: "+34666666",
     email: "dontBeScare@gmail.com",
     linkedin: "linkedin.com/monsterYey",
-    GitHub: "monsterYey",
+    gitHub: "monsterYey",
     photo: "data:image/png;base64,2342ba...",
 }
