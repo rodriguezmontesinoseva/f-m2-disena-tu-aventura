@@ -22,8 +22,10 @@
         <div class="dropdown__item">
             <label class="item__label" for="personalImage">Imagen de perfil</label>
             <div class="item__info--image-container">
-                <button class="item__info--button">Añadir imagen</button>
-                <img class="item__info--thumbnail" src="https://via.placeholder.com/30x30" alt="">
+                <input type="file" class="js__profile-upload-btn item__info hidden__file--button" name="personalImage" id="personalImage">
+                <button type="button" class="item__info--button js__profile-trigger">Añadir imagen</button>
+                <div class="js__profile-preview item__info--thumbnail">
+            </div>
             </div>
         </div>
 
