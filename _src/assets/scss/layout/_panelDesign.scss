@@ -1,15 +1,5 @@
-.panel-design {
-    color: $color-neutral-800;
-    border-bottom: 1px solid $color-neutral-200;
-    &__dropdown {        
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        padding-bottom: 10px;
-        padding-top: 10px;
-    }
-    &__radios {
+.panel {
+    &__design-radios {
         padding: 13px 0 0 19px;
         display: flex;
         justify-content: space-between;
@@ -18,28 +8,12 @@
         }
     }
 }
+
 .title-image__wrapper {      
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
-}
-
-.dropdown {
-    &__icon-section {
-        display: block;
-        @include drawRectangle(21px, 18px);
-        margin-right: 12px;
-    }
-    &__title {
-        font-size: 18px;
-        font-weight: 600;
-        text-transform: uppercase;
-    }
-    &__down-arrow {
-        display: block;
-        @include drawRectangle(16px, 18px);
-    }
 }
 
 .radios {

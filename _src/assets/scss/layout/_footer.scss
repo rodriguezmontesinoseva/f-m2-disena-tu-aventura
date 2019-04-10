@@ -7,7 +7,6 @@
     }
 }
 .footer__flex-wrapper {
-    display: grid;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -17,10 +16,6 @@
         flex-direction: row;
         justify-content: space-between;
         padding: 10px 40px 0 40px;
-    }
-    @media all and (min-width:$mediaTV) {
-        padding-left: 0;
-        padding-right: 0;
     } 
 }
 

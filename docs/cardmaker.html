@@ -49,10 +49,6 @@
         </header>
         <!-- MAIN -->
         <main class="main-content column-center">
-            <!-- Cuando creeis los parciales, a la sección principal que lo contiene
-            ponerle las clases grid-item__card y grid-item__fill-fields respectivamente.
-            Y que el primer parcial sea el que contiene la previsualización de la tarjeta
-            -->
             <section class="preview__section grid-item__card">
                 <div class="preview__section--container">
                     <button class="reset__button">
@@ -98,18 +94,18 @@
                 <!-- Everything inside this section is a single form, so every panel should
                 be a partial inside it: -->
                 <form action="/signup" method="post" class="main-form">
-                    <section class="panel-design">
-                        <div class="panel-design__dropdown">
+                    <section class="panel">
+                        <div class="panel__dropdown">
                             <div class="title-image__wrapper">
                                 <img class="dropdown__icon-section" src="./assets/images/ungroup.svg"
                                 alt="">
                                  <h2 class="dropdown__title">Diseña</h2>
 
                             </div>
-                            <img class="dropdown__down-arrow" src="./assets/images/down-arrow.svg"
+                            <img class="dropdown__arrow--up" id="dropdown__down-arrow--design" src="./assets/images/down-arrow.svg"
                             alt="Abrir panel diseña">
                         </div>
-                        <div class="panel-design__radios">
+                        <div class="panel__design-radios panel--openFlex">
                             <p class="radios__title">Colores</p>
                             <div class="radios__picker">
                                 <label class="control__text radios-text" for="option-color-1">
@@ -148,20 +144,18 @@
                             </div>
                         </div>
                     </section>
-                    <!-- Inside the mainApp, this is the second panel part of a single form
-                    -->
-                    <section class="panel-fill">
-                        <div class="panel-fill__dropdown">
+                    <section class="panel">
+                        <div class="panel__dropdown">
                             <div class="title-image__wrapper">
                                 <img class="dropdown__icon-section" src="./assets/images/keyboard.svg"
                                 alt="">
                                  <h2 class="dropdown__title">Rellena</h2>
 
                             </div>
-                            <img class="dropdown__down-arrow" src="./assets/images/down-arrow.svg"
+                            <img class="dropdown__arrow--down" id="dropdown__down-arrow--fill" src="./assets/images/down-arrow.svg"
                             alt="Abrir panel rellena">
                         </div>
-                        <fieldset class="panel-fill__form">
+                        <fieldset class="panel__fill-form panel--close">
                             <div class="dropdown__item">
                                 <label class="item__label" for="fullName">Nombre completo</label>
                                 <input class="item__info" type="text" id="fullName"
@@ -203,31 +197,31 @@
                             </div>
                         </fieldset>
                     </section>
-                    <section class="panel-design">
-                        <div class="panel-design__dropdown">
+                    <section class="panel">
+                        <div class="panel__dropdown">
                             <div class="title-image__wrapper">
                                 <img class="dropdown__icon-section" src="./assets/images/share.svg" alt="">
                                  <h2 class="dropdown__title">Comparte</h2>
 
                             </div>
-                            <img class="dropdown__down-arrow" src="./assets/images/down-arrow.svg"
-                            alt="Abrir panel diseña">
+                            <img class="dropdown__arrow--down" id="dropdown__down-arrow--share" src="./assets/images/down-arrow.svg"
+                            alt="Abrir panel compartir">
                         </div>
-                        <div class="align_share">
+                        <div class="align_share panel--close">
                             <button class="btn_share" type="submit">
                                 <img class="icon__id-card" src="assets/images/id-card.svg" alt="Crear tarjeta">Crear Tarjeta</button>
                         </div>
                     </section>
-                    <section class="align_share align_share_text">
+                    <section class="align_share align_share_text panel-design panel__twitter panel--close">
                         <p class="card-create">La tarjeta ha sido creada</p>
                         <p> <a class="card-link" href="http://">link</a>
 
                         </p>
+                        <div class="align_share">
+                            <button class="btn_twitter">
+                                <img class="icon__twitter" src="assets/images/twitter.svg" alt="compartir en Twitter">Compartir en Twitter</button>
+                        </div>
                     </section>
-                    <div class="align_share">
-                        <button class="btn_twitter">
-                            <img class="icon__twitter" src="assets/images/twitter.svg" alt="compartir en Twitter">Compartir en Twitter</button>
-                    </div>
                 </form>
             </section>
         </main>
