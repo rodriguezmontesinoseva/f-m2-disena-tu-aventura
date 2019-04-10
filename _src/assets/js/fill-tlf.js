@@ -1,43 +1,34 @@
 'use strict';
 
-// Element listener
+// recojer Elemento listener
 const tlfInputEl = document.querySelector('#phoneNumber');
 
-// Element target
+// recojer Elemento target
 const tlfCardEl = document.querySelector('#mobile-link');
 
-// Default value for telefone:
+// recojer Elemento value for telefone:
 const tflCardDefault = tlfCardEl.href;
 
-const tlfInputDefault = tlfInputEl.value
+// recojer el icono de la tarjeta preview de Github:
+const previewIconTelf = document.querySelector('.mobile-icon');
 
-// List element - telephone
+// funcction cuando se cambia el value de inputEL cambia, se añade clase addBoxShadow__IfInputIsFIlled al previewIcon
 
-const liElementTlf = document.querySelector('.mobile-icon');
+function addBoxshadowifFilled(inputEL,previewIcon){
 
-// Add color to preview 
-function addGreenBorderifFilled(){
-
-  if (tlfCardEl.href){
-    liElementTlf.classList.add('boxShadow__tlfIcon-IfInputIsFIlled');
+  if (inputEL.value){
+    previewIcon.classList.add('addBoxShadow__IfInputIsFIlled');
   }
-  else {
-    liElementTlf.classList.remove('boxShadow__tlfIcon-IfInputIsFIlled');;
-  }
-  }
- 
-
+}
 
 //Handler:
 function addPhoneNumber(){
 
 tlfCardEl.href = 'tel:' + tlfInputEl.value || tflCardDefault;
-addGreenBorderifFilled();
+
+addBoxshadowifFilled(tlfInputEl,previewIconTelf);
 };
 
 //Listener for the phone input element
 tlfInputEl.addEventListener('keyup', addPhoneNumber);
-
-
-
 
