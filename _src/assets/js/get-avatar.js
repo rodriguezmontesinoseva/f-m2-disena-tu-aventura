@@ -15,7 +15,7 @@ const profilePreview = document.querySelector('.js__profile-preview');
  * @param {evento} e 
  */
 function getImage(e){
-  var myFile = e.currentTarget.files[0];
+  const myFile = e.currentTarget.files[0];
   fr.addEventListener('load', writeImage);
   fr.readAsDataURL(myFile);
 }
