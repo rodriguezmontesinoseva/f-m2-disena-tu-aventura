@@ -42,15 +42,25 @@
     justify-content: flex-start;
 
 }
-
+.hidden__file--button {
+    position: fixed;
+    visibility: hidden;
+}
 .item__info--thumbnail {
     @include drawRectangle(30px, 30px);
     display: inline-block;
-
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     border: 1px solid $color-primary-200;
 }
 
 
 input::placeholder {
     color: $color-neutral-300;
+}
+
+.marker {
+    color: $color-secondary-600;
+    font-weight: $font-weight-thick;
 }

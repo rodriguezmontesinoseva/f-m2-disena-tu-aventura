@@ -10,32 +10,43 @@
 
     <fieldset class="panel__fill-form panel--close">
         <div class="dropdown__item">
-            <label class="item__label" for="fullName">Nombre completo</label>
-            <input class="item__info" type="text" id="fullName" placeholder="Ej: Monster Terribilus" name="fullName" required>    
+            <label class="item__label" for="fullName">Nombre completo
+                <span class="marker"> *</span>
+            </label>
+            <input class="item__info" type="text" id="fullName" placeholder="Monster Terribilus" name="fullName" required>    
         </div>
 
         <div class="dropdown__item">
-            <label class="item__label" for="rol">Puesto</label>
-            <input class="item__info"  type="text" id="rol" placeholder="Ej: Front-end" name="rol" required>    
+            <label class="item__label" for="rol">Puesto
+                <span class="marker"> *</span>
+            </label>
+            <input class="item__info"  type="text" id="rol" placeholder="Front-end" name="rol" required>    
         </div>
 
         <div class="dropdown__item">
             <label class="item__label" for="personalImage">Imagen de perfil</label>
             <div class="item__info--image-container">
-                <button class="item__info--button">Añadir imagen</button>
-                <img class="item__info--thumbnail" src="https://via.placeholder.com/30x30" alt="">
+                <input type="file" class="js__profile-upload-btn item__info hidden__file--button" name="personalImage" id="personalImage">
+                <button type="button" class="item__info--button js__profile-trigger">Añadir imagen</button>
+                <div class="js__profile-preview item__info--thumbnail">
+            </div>
             </div>
         </div>
 
         <div class="dropdown__item">
-            <label class="item__label" for="email">Email</label>
-            <input class="item__info" type="email" id="email" placeholder="dontBeScare@gmail.com" name="email" required>    
+            <label class="item__label"  for="phoneNumber">Teléfono
+                <span class="marker"> *</span>
+            </label>
+            <input class="item__info"  type="tel" id="phoneNumber" maxlength="15" minlenght='15' size="15" placeholder="+34-123-456-789" name="phoneNumber" required>    
         </div>
 
         <div class="dropdown__item">
-            <label class="item__label"  for="phoneNumber">Teléfono</label>
-            <input class="item__info"  type="tel" id="phoneNumber" maxlength="15" minlenght='15' size="15" placeholder="+34-123-456-789" name="phoneNumber" required>    
+            <label class="item__label" for="email">Email
+                <span class="marker"> *</span>
+            </label>
+            <input class="item__info" type="email" id="email" placeholder="dontBeScare@gmail.com" name="email" required>    
         </div>
+
 
         <div class="dropdown__item">
             <label class="item__label"  for="linkedin">Linkedin</label>
