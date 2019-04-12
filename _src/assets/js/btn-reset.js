@@ -11,6 +11,8 @@ function emptyInputs() {
 
 function handleButtonClick() {
     emptyInputs();
+
+    // LLamamos a las funciones que borran la info de la tarjeta y pone el valor por defecto (foto)
     printName2();
     changeRolOnCard();
     changeEmailOnCard();
