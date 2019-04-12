@@ -5,6 +5,19 @@ console.log("collapsible runningggg");
 // Consts for listeners
 const panelsDropdownEl = document.querySelectorAll(".panel__dropdown");
 
+const panelDesignRadiosEl = document.querySelector (".panel__design-radios");
+const panelFillFormEl = document.querySelector(".panel__fill-form");
+const alignShareEl= document.querySelector(".align-share");
+
+
+//panelsDropdownEl.classList.add("panel--close");
+//cerramos todos los colapsables.
+panelDesignRadiosEl.classList.add("panel--close");
+panelFillFormEl.classList.add("panel--close");
+panelDesignRadiosEl.classList.add("panel--close");
+
+console.log("clases del colapsable uno" + panelDesignRadiosEl.classList);
+
 //Función general
 function collapsiblePanel(event) {    
     const currentEl = event.currentTarget;
@@ -18,9 +31,10 @@ function collapsiblePanel(event) {
     
     // Define const to the next sibling
     const nextElSibling = currentEl.nextElementSibling;
+    nextElSibling.classList.remove("panel--close");
 
     // Add toogle to show or hide the panel
-    nextElSibling.classList.toggle("panel--close"); 
+   // nextElSibling.classList.toggle("panel--close"); 
 
     //Que en cualquier caso, siempre cierre el panel de Twitter
     twtPanelEl.classList.add("panel--close"); 
