@@ -2,23 +2,8 @@
 
 console.log("collapsible runningggg");
 
-//Get the element arrow (class dropdown__down-arrow)
-// const arrowEl = document.querySelector(".dropdown__down-arrow");
-// Let's get it by id instead
-const arrowElDesign = document.getElementById("dropdown__down-arrow--design");
-const arrowElFill = document.getElementById("dropdown__down-arrow--fill");
-const arrowElShare = document.getElementById("dropdown__down-arrow--share");
-
-// TO BE REMOVED -- Apparently these 3 could be removed. Need approval to do so.
-const panelDesignEl = document.querySelector(".panel__design-radios");
-const panelFillEl = document.querySelector(".panel-fill__form");
-const panelShareEl = document.querySelector(".align_share");
-
 // Consts for listeners
-const designDropdownEl = document.querySelector(".panel__dropdown--design");
-const fillDropdownEl = document.querySelector(".panel__dropdown--fill");
-const shareDropdownEl = document.querySelector(".panel__dropdown--share");
-
+const panelsDropdownEl = document.querySelectorAll(".panel__dropdown");
 
 //Función general
 function collapsiblePanel(event) {    
@@ -42,9 +27,9 @@ function collapsiblePanel(event) {
 }
 
 // Add listeners (to the 'header' of each section):
-designDropdownEl.addEventListener("click", collapsiblePanel);
-fillDropdownEl.addEventListener("click", collapsiblePanel);
-shareDropdownEl.addEventListener("click", collapsiblePanel);
+for (const listener of panelsDropdownEl){
+    listener.addEventListener("click", collapsiblePanel);
+}
 
 //Cuando hagamos click en el botón naranja de Crear Tarjeta, nos tiene que mostrar la sección de Twitter.
 
