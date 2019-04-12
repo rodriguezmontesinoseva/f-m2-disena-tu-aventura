@@ -1,3 +1,4 @@
+'use strict'
 //Create an empty object, following Adalab documentation instructions here
 // https://books.adalab.es/materiales-front-end-f/proyectos/p2_anexo
 
