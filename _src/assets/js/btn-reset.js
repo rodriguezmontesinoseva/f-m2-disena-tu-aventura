@@ -9,7 +9,15 @@ function emptyInputs() {
     }
 }
 
+function emptyImg(){
+    //vaciamos la url del background image y ponemos la foto por defecto
+
+    profileImage.style.backgroundImage ="";
+    profilePreview.style.backgroundImage = "";
+}
+
 function handleButtonClick() {
+    emptyImg();
     emptyInputs();
 
     // LLamamos a las funciones que borran la info de la tarjeta y pone el valor por defecto (foto)
