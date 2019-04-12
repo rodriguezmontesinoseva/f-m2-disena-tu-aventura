@@ -1,7 +1,3 @@
-'use strict';
-
-console.log("collapsible runningggg");
-
 //Get the element arrow (class dropdown__down-arrow)
 // const arrowEl = document.querySelector(".dropdown__down-arrow");
 // Let's get it by id instead
