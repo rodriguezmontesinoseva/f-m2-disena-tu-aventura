@@ -9,38 +9,42 @@ const arrowElDesign = document.getElementById("dropdown__down-arrow--design");
 const arrowElFill = document.getElementById("dropdown__down-arrow--fill");
 const arrowElShare = document.getElementById("dropdown__down-arrow--share");
 
-const panelDesignEl = document.querySelector(".panel-design__radios");
+// TO BE REMOVED -- Apparently these 3 could be removed. Need approval to do so.
+const panelDesignEl = document.querySelector(".panel__design-radios");
 const panelFillEl = document.querySelector(".panel-fill__form");
 const panelShareEl = document.querySelector(".align_share");
+
+// Consts for listeners
+const designDropdownEl = document.querySelector(".panel__dropdown--design");
+const fillDropdownEl = document.querySelector(".panel__dropdown--fill");
+const shareDropdownEl = document.querySelector(".panel__dropdown--share");
 
 
 //Función general
 function collapsiblePanel(event) {    
-    const currentArrow = event.currentTarget;
-    //Buscamos en su árbol familiar, para llegar desde la flecha al elemento panel:
-    // console.dir(currentArrow);
+    const currentEl = event.currentTarget;
+    // Define const for the current arrow, usign chilNodes to catch the 4th child.
+    const currentArrowEl = currentEl.childNodes[3];
+    // console.log(currentArrowEl);
 
     // Add toogle up and down arrow
-    currentArrow.classList.toggle("dropdown__arrow--up");
-    currentArrow.classList.toggle("dropdown__arrow--down");
+    currentArrowEl.classList.toggle("dropdown__arrow--up");
+    currentArrowEl.classList.toggle("dropdown__arrow--down");
+    
+    // Define const to the next sibling
+    const nextElSibling = currentEl.nextElementSibling;
 
-    // Vamos desde la flecha a la madre contenedora
-    const parentElArrow = currentArrow.parentElement;
-
-    // Buscamos la tía de la flecha jajaja:
-    const nextElSibling = parentElArrow.nextElementSibling;
-
-    //Add toogle to show or hide the panel
+    // Add toogle to show or hide the panel
     nextElSibling.classList.toggle("panel--close"); 
 
     //Que en cualquier caso, siempre cierre el panel de Twitter
     twtPanelEl.classList.add("panel--close"); 
 }
 
-// Add listeners:
-arrowElDesign.addEventListener("click", collapsiblePanel);
-arrowElFill.addEventListener("click", collapsiblePanel);
-arrowElShare.addEventListener("click", collapsiblePanel);
+// Add listeners (to the 'header' of each section):
+designDropdownEl.addEventListener("click", collapsiblePanel);
+fillDropdownEl.addEventListener("click", collapsiblePanel);
+shareDropdownEl.addEventListener("click", collapsiblePanel);
 
 //Cuando hagamos click en el botón naranja de Crear Tarjeta, nos tiene que mostrar la sección de Twitter.
 
