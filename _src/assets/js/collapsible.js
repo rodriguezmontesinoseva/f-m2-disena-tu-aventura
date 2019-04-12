@@ -8,7 +8,7 @@ const panelsDropdownEl = document.querySelectorAll(".panel__dropdown");
 //Función general
 function collapsiblePanel(event) {    
     const currentEl = event.currentTarget;
-    // Define const for the current arrow, usign chilNodes to catch the 4th child.
+    // Define const for the current arrow, using childNodes to catch the 4th child.
     const currentArrowEl = currentEl.childNodes[3];
     // console.log(currentArrowEl);
 
