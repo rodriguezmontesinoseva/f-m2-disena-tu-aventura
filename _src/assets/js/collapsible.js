@@ -12,17 +12,18 @@ const alignShareEl= document.querySelector(".align-share");
 
 //panelsDropdownEl.classList.add("panel--close");
 //cerramos todos los colapsables.
-// panelDesignRadiosEl.classList.add("panel--close");
-// panelFillFormEl.classList.add("panel--close");
-// panelDesignRadiosEl.classList.add("panel--close");
+panelDesignRadiosEl.classList.add("panel--close");
+panelFillFormEl.classList.add("panel--close");
+panelDesignRadiosEl.classList.add("panel--close");
 
-console.log("clases del colapsable uno" + panelDesignRadiosEl.classList);
+console.log("clases del colapsable 1 " + panelDesignRadiosEl.classList);
 
 //Función general
 function collapsiblePanel(event) {    
-    panelDesignRadiosEl.classList.add("panel--close");
-    panelFillFormEl.classList.add("panel--close");
-    panelDesignRadiosEl.classList.add("panel--close");
+
+    // panelDesignRadiosEl.classList.add("panel--close");
+    // panelFillFormEl.classList.add("panel--close");
+    // panelDesignRadiosEl.classList.add("panel--close");
 
     const currentEl = event.currentTarget;
     // Define const for the current arrow, using childNodes to catch the 4th child.
