@@ -1,6 +1,6 @@
 'use strict';
 
-console.log("collapsible runningggg");
+//console.log("collapsible runningggg");
 
 // Consts for listeners
 const panelsDropdownEl = document.querySelectorAll(".panel__dropdown");
@@ -10,15 +10,23 @@ const panelFillFormEl = document.querySelector(".panel__fill-form");
 const alignShareEl= document.querySelector(".align_share");
 
 
+//console.log(arrowsUpEl);
+
+
+
+
+
+
+
 //panelsDropdownEl.classList.add("panel--close");
 //cerramos todos los colapsables.
 // panelDesignRadiosEl.classList.add("panel--close");
 // panelFillFormEl.classList.add("panel--close");
 // panelDesignRadiosEl.classList.add("panel--close");
 
-console.log("clases del colapsable 1 " + panelDesignRadiosEl.classList);
-console.log("clases del colapsable 2 " + panelFillFormEl.classList);
-console.log("clases del colapsable 3 " + alignShareEl.classList);
+// console.log("clases del colapsable 1 " + panelDesignRadiosEl.classList);
+// console.log("clases del colapsable 2 " + panelFillFormEl.classList);
+// console.log("clases del colapsable 3 " + alignShareEl.classList);
 
 //Función general
 function collapsiblePanel(event) {    
@@ -26,28 +34,58 @@ function collapsiblePanel(event) {
     panelDesignRadiosEl.classList.add("panel--close");
     panelFillFormEl.classList.add("panel--close");
     alignShareEl.classList.add("panel--close");
-console.log("clase cerrada? " + panelDesignRadiosEl.classList);
+
+    const arrowsUpEl=document.querySelector(".dropdown__arrow--up");
+    const arrowsDownEl=document.querySelector(".dropdown__arrow--down");
+
+        // al que está abierto-flecha up, le pongo flecha down
+arrowsUpEl.classList.remove("dropdown__arrow--up");
+arrowsUpEl.classList.add("dropdown__arrow--down");
+//arrowsDownEl.classList.add ("dropdown__arrow--down");
+console.log (arrowsUpEl);
+
+
+
+
+//console.log("clase cerrada? " + panelDesignRadiosEl.classList);
 
     const currentEl = event.currentTarget;
     // Define const for the current arrow, using childNodes to catch the 4th child.
-    const currentArrowEl = currentEl.childNodes[3];
+    const currentAllArrowsEl = currentEl.childNodes[3];
+
+   //console.log("clases de todas las flechas " + currentAllArrowsEl.classList);
+
+
+    const currentArrowEl = currentEl.children[1];
+    
+   //console.dir(currentEl);
+  //  console.log("a ver que sale ", currentEl.children[1]);
+
     // console.log(currentArrowEl);
 
     // Add toogle up and down arrow
-    currentArrowEl.classList.toggle("dropdown__arrow--up");
-    currentArrowEl.classList.toggle("dropdown__arrow--down");
+    // currentArrowEl.classList.toggle("dropdown__arrow--up");
+    // currentArrowEl.classList.toggle("dropdown__arrow--down");
     
     // Define const to the next sibling
     const nextElSibling = currentEl.nextElementSibling;
                  nextElSibling.classList.remove("panel--close");
+
+                // currentAllArrowsEl.classList.remove("dropdown__arrow--up");
+                // currentAllArrowsEl.classList.add("dropdown__arrow--down");
+                //  console.log("todas las flechas para abajo ", currentAllArrowsEl.classList); //array para recorrer currentallaarrowel
+
+                 currentArrowEl.classList.remove("dropdown__arrow--down");
+                 currentArrowEl.classList.add("dropdown__arrow--up");
+
     //  nextElSibling.classList.toggle("panel--close");
     //  nextElSibling.classList.toggle("panel--openFlex");
 
 
 
-    console.log("clases 1 " + panelDesignRadiosEl.classList);
-    console.log("clases 2 " +  panelFillFormEl.classList);
-    console.log("clases 3 " + alignShareEl.classList);
+    // console.log("clases 1 " + panelDesignRadiosEl.classList);
+    // console.log("clases 2 " +  panelFillFormEl.classList);
+    // console.log("clases 3 " + alignShareEl.classList);
 
 
     // Add toogle to show or hide the panel
