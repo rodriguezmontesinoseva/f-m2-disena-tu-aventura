@@ -1,7 +1,6 @@
 //* Default styles for preview card*//
 
 .preview__section {
-    background: linear-gradient(to top, #e17334, #e3844f, #e39569, #e2a583, #dfb59e);
     padding: 0 40px 40px 40px;
     font-family: 'Open Sans', sans-serif;
     display:flex;
@@ -87,12 +86,18 @@
         border-top: solid 45px $color-secondary-720;
     }
     .social__icons {
-        border: solid 2px $color-secondary-720;
+        border: solid 2px $color-secondary-710;
     }
     .wrap-icon{
         fill: $color-secondary-700;
     }
+
 }
+.bgc-color-green{
+   background: linear-gradient(rgba($color-secondary-720, 0.5), $color-neutral-0);
+
+}
+
 //* Red *//
 .theme-red {
     .full-name__card{
@@ -103,20 +108,24 @@
         border-top: solid 45px $color-secondary-670;
     }
     .social__icons {
-        border: solid 2px $color-secondary-670;
+        border: solid 2px $color-secondary-660;
     }
     .wrap-icon{
         fill: $color-secondary-650;
     }
 }
+.bgc-color-red{
+   background: linear-gradient(rgba($color-secondary-670, 0.5), $color-neutral-0);
+}
+
 //* Blue *//
 .theme-blue {
     .full-name__card{
         color: $color-secondary-850;
     }
     .deco-rectangle__card{
-        border-left: solid 5px $color-secondary-870;
-        border-top: solid 45px $color-secondary-870;
+        border-left: solid 5px $color-secondary-860;
+        border-top: solid 45px $color-secondary-860;
     }
     .social__icons {
         border: solid 2px $color-secondary-870;
@@ -124,4 +133,7 @@
     .wrap-icon{
         fill: $color-secondary-850;
     }
+}
+.bgc-color-blue{
+    background: linear-gradient($color-secondary-860, $color-neutral-0);
 }
