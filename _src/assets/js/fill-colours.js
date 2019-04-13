@@ -6,7 +6,6 @@ const option2ColourEl = document.querySelector('#option-color-2');
 const option3ColourEl = document.querySelector('#option-color-3');
 const previewCardEl = document.querySelector('.preview__card');
 const previewSectionEl =document.querySelector ('.preview__section');
-console.log (previewSectionEl, previewCardEl);
 
 //function asking which option-button is marked and loads that range of colors into the preview
 function changeColourPreview(){
