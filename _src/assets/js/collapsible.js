@@ -7,23 +7,26 @@ const panelsDropdownEl = document.querySelectorAll(".panel__dropdown");
 
 const panelDesignRadiosEl = document.querySelector (".panel__design-radios");
 const panelFillFormEl = document.querySelector(".panel__fill-form");
-const alignShareEl= document.querySelector(".align-share");
+const alignShareEl= document.querySelector(".align_share");
 
 
 //panelsDropdownEl.classList.add("panel--close");
 //cerramos todos los colapsables.
-panelDesignRadiosEl.classList.add("panel--close");
-panelFillFormEl.classList.add("panel--close");
-panelDesignRadiosEl.classList.add("panel--close");
+// panelDesignRadiosEl.classList.add("panel--close");
+// panelFillFormEl.classList.add("panel--close");
+// panelDesignRadiosEl.classList.add("panel--close");
 
 console.log("clases del colapsable 1 " + panelDesignRadiosEl.classList);
+console.log("clases del colapsable 2 " + panelFillFormEl.classList);
+console.log("clases del colapsable 3 " + alignShareEl.classList);
 
 //Función general
 function collapsiblePanel(event) {    
 
-    // panelDesignRadiosEl.classList.add("panel--close");
-    // panelFillFormEl.classList.add("panel--close");
-    // panelDesignRadiosEl.classList.add("panel--close");
+    panelDesignRadiosEl.classList.add("panel--close");
+    panelFillFormEl.classList.add("panel--close");
+    alignShareEl.classList.add("panel--close");
+console.log("clase cerrada? " + panelDesignRadiosEl.classList);
 
     const currentEl = event.currentTarget;
     // Define const for the current arrow, using childNodes to catch the 4th child.
@@ -36,13 +39,23 @@ function collapsiblePanel(event) {
     
     // Define const to the next sibling
     const nextElSibling = currentEl.nextElementSibling;
-    nextElSibling.classList.remove("panel--close");
+                 nextElSibling.classList.remove("panel--close");
+    //  nextElSibling.classList.toggle("panel--close");
+    //  nextElSibling.classList.toggle("panel--openFlex");
+
+
+
+    console.log("clases 1 " + panelDesignRadiosEl.classList);
+    console.log("clases 2 " +  panelFillFormEl.classList);
+    console.log("clases 3 " + alignShareEl.classList);
+
 
     // Add toogle to show or hide the panel
    // nextElSibling.classList.toggle("panel--close"); 
 
     //Que en cualquier caso, siempre cierre el panel de Twitter
     twtPanelEl.classList.add("panel--close"); 
+
 }
 
 // Add listeners (to the 'header' of each section):
