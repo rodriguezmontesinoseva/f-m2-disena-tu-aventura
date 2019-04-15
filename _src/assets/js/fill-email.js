@@ -1,5 +1,3 @@
-'use strict';
-
 // EMAIL //
 
 const emailLink = document.querySelector('#email');

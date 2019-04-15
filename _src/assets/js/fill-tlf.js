@@ -2,6 +2,9 @@
 
 // recojer Elemento listener
 const tlfInputEl = document.querySelector('#phoneNumber');
+const tlfElement = document.querySelector('#phoneNumber');
+const tlfCardImage = document.querySelector('#mobile-link');
+const tflCardInitial = tlfCardImage.innerHTML;
 
 // recojer Elemento target
 const tlfCardEl = document.querySelector('#mobile-link');
@@ -18,17 +21,27 @@ function addBoxshadowifFilled(inputEL,previewIcon){
 
   if (inputEL.value){
     previewIcon.classList.add('addBoxShadow__IfInputIsFIlled');
+
   }
+else {
+  previewIcon.classList.remove('addBoxShadow__IfInputIsFIlled');
 }
-
-//Handler:
-function addPhoneNumber(){
-
-tlfCardEl.href = 'tel:' + tlfInputEl.value || tflCardDefault;
-
-addBoxshadowifFilled(tlfInputEl,previewIconTelf);
+  
 };
 
+function phonenumber(){
+  
+  if (tlfElement.value){
+       tlfCardImage.href = 'tel:' + tlfElement.value;
+  }
+
+  else {
+    tlfCardImage.removeAttribute("href");
+  }
+  addBoxshadowifFilled(tlfInputEl,previewIconTelf);
+}
+
+
 //Listener for the phone input element
-tlfInputEl.addEventListener('keyup', addPhoneNumber);
+tlfInputEl.addEventListener('keyup', phonenumber);
 
