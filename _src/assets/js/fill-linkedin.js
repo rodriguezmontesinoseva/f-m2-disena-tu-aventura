@@ -1,7 +1,3 @@
-'use strict';
-
-// console.log('>> fill-linkedin running :)');
-
 // Element listener
 const linkedinInputEl = document.querySelector('#linkedin');
 
@@ -16,7 +12,14 @@ const linkedinDefault = linkedinCardEl.href;
 function linkBottonLinkedin () {
     // console.log(linkedinInputEl.value);
 
-    linkedinCardEl.href = linkedinInputEl.value || linkedinDefault;
+    const linkedinDefinitiveLink =  linkedinInputEl.value; // valor final del link
+
+    if (!linkedinDefinitiveLink){
+        linkedinCardEl.removeAttribute("href");
+        }
+        else {
+            linkedinCardEl.href = `https://www.linkedin.com/in/${linkedinDefinitiveLink}`;
+        }
 };
 
 //Listener for the linkedin input element
