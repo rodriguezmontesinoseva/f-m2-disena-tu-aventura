@@ -7,6 +7,9 @@ const linkedinCardEl = document.querySelector('.linkedin-link');
 // Default value for linkedin:
 const linkedinDefault = linkedinCardEl.href;
 
+// recojer el icono de la tarjeta preview de Linkdin:
+const previewIconLinkedin = document.querySelector('.linkedin-icon');
+
 
 //Handler:
 function linkBottonLinkedin () {
@@ -20,6 +23,8 @@ function linkBottonLinkedin () {
         else {
             linkedinCardEl.href = `https://www.linkedin.com/in/${linkedinDefinitiveLink}`;
         }
+        addBoxshadowifFilled(linkedinInputEl,previewIconLinkedin);
+
 };
 
 //Listener for the linkedin input element
