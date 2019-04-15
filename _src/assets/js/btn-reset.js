@@ -11,9 +11,30 @@ function emptyInputs() {
 
 function emptyImg(){
     //vaciamos la url del background image y ponemos la foto por defecto
+    profileImage.style.backgroundImage = '';
+    profilePreview.style.backgroundImage = '';
+}
 
-    profileImage.style.backgroundImage ="";
-    profilePreview.style.backgroundImage = "";
+function ereaseLocalStorage() {
+    localStorage.removeItem('palette');
+    localStorage.removeItem('name');
+    localStorage.removeItem('job');
+    localStorage.removeItem('phone');
+    localStorage.removeItem('email');
+    localStorage.removeItem('linkedin');
+    localStorage.removeItem('gitHub');
+    localStorage.removeItem('photo');
+}
+
+function ereaseUserDataObject() {
+    // Como no quiero borrar la info del objeto lo que hago es vaciar sus datos y ponerlos por defecto
+    userData.palette = 1;
+    userData.name = '';
+    userData.job = '';
+    userData.phone = '';
+    userData.linkedin = '';
+    userData.gitHub = '';
+    userData.photo = '';
 }
 
 function handleButtonClick() {
@@ -30,9 +51,11 @@ function handleButtonClick() {
 
     // Poner el color seleccionado en el default (primer radio button)
     option1ColourEl.click();
+
     // Borrar toda la info del caché
+    ereaseLocalStorage();
+    // Vacía el objeto con los datos del usuario
+    ereaseUserDataObject();
 }
 
-
-// Al hacer click en el se tienen que borrar:
 btnResetEl.addEventListener('click', handleButtonClick);
