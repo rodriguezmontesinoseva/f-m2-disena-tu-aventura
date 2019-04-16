@@ -8,16 +8,19 @@ const inputsFillEl = document.querySelectorAll('.item__info');
 console.dir(inputsFillEl);
 
 const infoValue = [];
-//Fake palette temporary:
-
-
 const objectKeys = [];
+
+//Función poderosa!!
+function fillUserDataObject(key,value) {
+    userData[key] = value;
+};
 
 //form.elements
 
 //handler
 //Read the values>> fill the object
 function handlerBtnClick(){
+    //Fake palette temporary:
     infoValue[0] = 1;
     for(let i=0; i<inputsFillEl.length; i++){
         infoValue[i+1] = inputsFillEl[i].value;
@@ -25,27 +28,21 @@ function handlerBtnClick(){
     //Array of values filled:
     console.log(infoValue);
 
-    objectKeys[0] = 'palette';
-    for(let i=0; i<infoValue.length; i++){
-
+    //Bucle para rellenar
+    for(let i=0; i<(infoValue.length-1); i++){
         //claves del objeto vacío (nombres)
-        objectKeys[i+1] = inputsFillEl[i].getAttribute('name');
+        objectKeys[i] = inputsFillEl[i].getAttribute('name'); 
+    };
+    objectKeys.push('palette');
+    console.log(objectKeys);
 
-        console.log(objectKeys);
+    for(let i=0; i<objectKeys.length; i++){
+        const objectKeysItem = objectKeys[i];
 
-        //los valores que queremos meter en el objeto vacío
-        // infoValue[i]
-
-        userData.objectKeys[i] = infoValue[i];
-        
-    }
-
-
-    // console.log(userData);s
-
+        fillUserDataObject(objectKeysItem,infoValue[i]);
+    };
+    console.log(userData);
 }
-
-userData.name = 'Pepita';
 
 //Listener click btn
 btnCreateCardEl.addEventListener('click',handlerBtnClick);
