@@ -13,8 +13,11 @@ const linkedinDefault = linkedinCardEl.href;
 
 
 //Handler:
-function linkBottonLinkedin () {
-    // console.log(linkedinInputEl.value);
+function linkBottonLinkedin (event) {
+    //Fill the userData object with this value when is selected
+    const key = event.currentTarget.name;
+    const value = linkedinInputEl.value;
+    fillUserDataObject(key,value);
 
     linkedinCardEl.href = linkedinInputEl.value || linkedinDefault;
 };

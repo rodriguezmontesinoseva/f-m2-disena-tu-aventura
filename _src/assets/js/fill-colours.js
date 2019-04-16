@@ -1,3 +1,4 @@
+'use strict';
 //A color theme is selected in the DESIGN section and the preview is updated with those colors in real time.
 
 const option1ColourEl = document.querySelector('#option-color-1');
@@ -6,18 +7,31 @@ const option3ColourEl = document.querySelector('#option-color-3');
 const previewCardEl = document.querySelector('.preview__card');
 
 //function asking which option-button is marked and loads that range of colors into the preview
-function changeColourPreview(){
+function changeColourPreview(event){
     if (option1ColourEl.checked){
+         //Fill the userData object with this value when is selected
+         const key = event.currentTarget.name;
+         const value = 1;
+          fillUserDataObject(key,value);
+
          previewCardEl.classList.remove('theme-red');
          previewCardEl.classList.remove('theme-blue');
          previewCardEl.classList.add('theme-green');
 
     }else if(option2ColourEl.checked){
+          const key = event.currentTarget.name;
+          const value = 2;
+          fillUserDataObject(key,value);
+
          previewCardEl.classList.remove('theme-green');
          previewCardEl.classList.remove('theme-blue');
          previewCardEl.classList.add('theme-red');
 
     }else if(option3ColourEl.checked){
+          const key = event.currentTarget.name;
+          const value = 3;
+          fillUserDataObject(key,value);
+
          previewCardEl.classList.remove('theme-red');
          previewCardEl.classList.remove('theme-green');
          previewCardEl.classList.add('theme-blue');
