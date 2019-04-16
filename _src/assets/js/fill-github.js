@@ -5,12 +5,12 @@ const githubLinkEl = document.querySelector('.link-github');  // elemento <a>
 const previewIconGitHub = document.querySelector('.github-icon');
    
 function putLinkIcon(event) {
-    const githubDefinitiveLink =  githubEl.value; // valor final del link
-
     //Fill the userData object with this value when is selected
     const key = event.currentTarget.name;
-    const value = githubDefinitiveLink;
+    const value = githubEl.value;
     fillUserDataObject(key,value);
+
+    const githubDefinitiveLink =  githubEl.value; // valor final del link
     
     if (!githubDefinitiveLink){
         githubLinkEl.removeAttribute("href");
