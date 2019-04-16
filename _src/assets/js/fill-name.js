@@ -1,7 +1,3 @@
-'use strict';
-
-// console.log('>> fill-name running :)');
-
 // Element listener
 const nameInputEl = document.querySelector("#fullName");
 // Element target

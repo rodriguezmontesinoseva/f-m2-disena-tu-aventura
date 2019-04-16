@@ -1,66 +1,65 @@
 'use strict';
 
-console.log("collapsible runningggg");
 
-//Get the element arrow (class dropdown__down-arrow)
-// const arrowEl = document.querySelector(".dropdown__down-arrow");
-// Let's get it by id instead
-const arrowElDesign = document.getElementById("dropdown__down-arrow--design");
-const arrowElFill = document.getElementById("dropdown__down-arrow--fill");
-const arrowElShare = document.getElementById("dropdown__down-arrow--share");
+// Consts for listeners and siblings
+const panelsDropdownEl = document.querySelectorAll('.panel__dropdown');
+const panelDesignRadiosEl = document.querySelector ('.panel__design-radios');
+const panelFillFormEl = document.querySelector('.panel__fill-form');
+const alignShareEl= document.querySelector('.align_share');
 
-const panelDesignEl = document.querySelector(".panel-design__radios");
-const panelFillEl = document.querySelector(".panel-fill__form");
-const panelShareEl = document.querySelector(".align_share");
-
-
-//Función general
+//General function: one open panel, the rest closed.
 function collapsiblePanel(event) {    
-    const currentArrow = event.currentTarget;
-    //Buscamos en su árbol familiar, para llegar desde la flecha al elemento panel:
-    // console.dir(currentArrow);
+    
+  //All collapsables are closed
+  panelDesignRadiosEl.classList.add('panel--close');
+  panelFillFormEl.classList.add('panel--close');
+  alignShareEl.classList.add('panel--close');
 
-    // Add toogle up and down arrow
-    currentArrow.classList.toggle("dropdown__arrow--up");
-    currentArrow.classList.toggle("dropdown__arrow--down");
+  //Bring the elements of the arrows
+  const arrowsUpEl=document.querySelector('.dropdown__arrow--up');
+  // const arrowsDownEl=document.querySelector('.dropdown__arrow--down');
+  // put the arrows with arrow--down
+  arrowsUpEl.classList.remove('dropdown__arrow--up');
+  arrowsUpEl.classList.add('dropdown__arrow--down');
 
-    // Vamos desde la flecha a la madre contenedora
-    const parentElArrow = currentArrow.parentElement;
+  //constants for the .currentTarjet, its child (arrow) and its brother (drop-down panel)
+  const currentEl = event.currentTarget;
+  const currentArrowEl = currentEl.children[1];
+  const nextElSibling = currentEl.nextElementSibling;
 
-    // Buscamos la tía de la flecha jajaja:
-    const nextElSibling = parentElArrow.nextElementSibling;
+  //Open the currentTarjet dropdown and put arrow--up
+  nextElSibling.classList.remove('panel--close');
+  currentArrowEl.classList.remove('dropdown__arrow--down');
+  currentArrowEl.classList.add('dropdown__arrow--up');
 
-    //Add toogle to show or hide the panel
-    nextElSibling.classList.toggle("panel--close"); 
-
-    //Que en cualquier caso, siempre cierre el panel de Twitter
-    twtPanelEl.classList.add("panel--close"); 
+  //Que en cualquier caso, siempre cierre el panel de Twitter
+  twtPanelEl.classList.add('panel--close'); 
 }
 
-// Add listeners:
-arrowElDesign.addEventListener("click", collapsiblePanel);
-arrowElFill.addEventListener("click", collapsiblePanel);
-arrowElShare.addEventListener("click", collapsiblePanel);
+// Add listeners (to the 'header' of each section):
+for (const listener of panelsDropdownEl){
+  listener.addEventListener('click', collapsiblePanel);
+}
 
 //Cuando hagamos click en el botón naranja de Crear Tarjeta, nos tiene que mostrar la sección de Twitter.
 
 //Coger el elemento botón
-const btnShareEl = document.querySelector(".btn_share");
+const btnShareEl = document.querySelector('.btn_share');
 //Coger el elemento panel twitter
-const twtPanelEl = document.querySelector(".panel__twitter");
+const twtPanelEl = document.querySelector('.panel__twitter');
 
 //Añadir handler que hace 2 cosas:
 function handlerCreateCard(event) {
-    event.preventDefault();
+  event.preventDefault();
 
-    //Mostrar/ocultar panel mediante toggle
-    //Add toogle to show or hide the panel
-    twtPanelEl.classList.toggle("panel--close"); 
-    //Mostrar el botón como deshabilitado (grisecillo) 
-    console.dir(btnShareEl);
-    btnShareEl.disabled = true;
-    btnShareEl.classList.toggle("btn_share--disabled");
+  //Mostrar/ocultar panel mediante toggle
+  //Add toogle to show or hide the panel
+  twtPanelEl.classList.toggle('panel--close'); 
+  //Mostrar el botón como deshabilitado (grisecillo) 
+  console.dir(btnShareEl);
+  btnShareEl.disabled = true;
+  btnShareEl.classList.toggle('btn_share--disabled');
 }
 
 //Listener al botón
-btnShareEl.addEventListener("click", handlerCreateCard);
+btnShareEl.addEventListener('click', handlerCreateCard);

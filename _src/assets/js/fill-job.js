@@ -1,5 +1,3 @@
-'use strict';
-
 // JOB //
 
 const rolEl = document.querySelector('#rol');

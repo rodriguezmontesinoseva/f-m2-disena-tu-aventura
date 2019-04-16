@@ -28,7 +28,8 @@
       "_src/assets/js/collapsible.js",
       "_src/assets/js/user-card.js",
       "_src/assets/js/get-avatar.js",
-      "_src/assets/js/fill-user-card.js"
+      "_src/assets/js/fill-user-card.js",
+      "_src/assets/js/btn-reset.js"
 		],
 		"dest": "public/assets/js/",
     "dist": "docs/assets/js/"

@@ -53,6 +53,7 @@
     background-size: cover;
     background-position: center;
     border: 1px solid $color-primary-200;
+    background-image: url(../images/user-photo-default.png);
 }
 
 
@@ -60,6 +61,12 @@ input::placeholder {
     color: $color-neutral-300;
 }
 
+.addBoxShadow__IfInputIsFIlled{
+    box-shadow: 0px 0px 14px 2px $color-neutral-400;
+    
+   
+   }
+   
 .marker {
     color: $color-secondary-600;
     font-weight: $font-weight-thick;

@@ -1,7 +1,3 @@
-'use strict';
-
-// console.log('>> fill-linkedin running :)');
-
 // Element listener
 const linkedinInputEl = document.querySelector('#linkedin');
 
@@ -11,6 +7,9 @@ const linkedinCardEl = document.querySelector('.linkedin-link');
 // Default value for linkedin:
 const linkedinDefault = linkedinCardEl.href;
 
+// recojer el icono de la tarjeta preview de Linkdin:
+const previewIconLinkedin = document.querySelector('.linkedin-icon');
+
 
 //Handler:
 function linkBottonLinkedin (event) {
@@ -19,7 +18,16 @@ function linkBottonLinkedin (event) {
     const value = linkedinInputEl.value;
     fillUserDataObject(key,value);
 
-    linkedinCardEl.href = linkedinInputEl.value || linkedinDefault;
+    const linkedinDefinitiveLink =  linkedinInputEl.value; // valor final del link
+
+    if (!linkedinDefinitiveLink){
+        linkedinCardEl.removeAttribute("href");
+        }
+        else {
+            linkedinCardEl.href = `https://www.linkedin.com/in/${linkedinDefinitiveLink}`;
+        }
+        addBoxshadowifFilled(linkedinInputEl,previewIconLinkedin);
+
 };
 
 //Listener for the linkedin input element
