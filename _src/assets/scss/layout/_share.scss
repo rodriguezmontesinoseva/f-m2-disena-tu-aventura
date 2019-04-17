@@ -16,7 +16,7 @@ width: 25px;
 height: 25px;
 }
 
-.btn_twitter{
+.twitter-share-button{
     width: 181px;
     height: 30px;
     margin: 14px;
@@ -25,6 +25,7 @@ height: 25px;
     box-shadow: 0 0px 4px 0 rgba($color-neutral-1000, 0.32);
     background-color: $color-secondary-770;
     padding-right: 9px;
+    text-decoration: none;
 
     text-align: center;    
     color: $color-neutral-0;

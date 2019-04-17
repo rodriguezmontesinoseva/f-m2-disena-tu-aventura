@@ -1,7 +1,8 @@
 .panel {
     color: $color-neutral-800;
     border-bottom: 1px solid $color-neutral-200;
-    &__dropdown {        
+    &__dropdown {
+        cursor: pointer;        
         display: flex;
         flex-direction: row;
         justify-content: space-between;
