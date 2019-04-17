@@ -6,9 +6,7 @@ const previewIconGitHub = document.querySelector('.github-icon');
    
 function putLinkIcon(event) {
     //Fill the userData object with this value when is selected
-    const key = event.currentTarget.name;
-    const value = githubEl.value;
-    fillUserDataObject(key,value);
+    
 
     const githubDefinitiveLink =  githubEl.value; // valor final del link
     
@@ -19,6 +17,10 @@ function putLinkIcon(event) {
             githubLinkEl.href = `https://github.com/${githubDefinitiveLink}`;
         }
         addBoxshadowifFilled(githubEl,previewIconGitHub);
+
+        const key = event.currentTarget.name;
+        const value = githubLinkEl.href;
+        fillUserDataObject(key,value);
 }
 
 githubEl.addEventListener('keyup', putLinkIcon);

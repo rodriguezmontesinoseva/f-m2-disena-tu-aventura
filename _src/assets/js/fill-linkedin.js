@@ -14,9 +14,7 @@ const previewIconLinkedin = document.querySelector('.linkedin-icon');
 //Handler:
 function linkBottonLinkedin (event) {
     //Fill the userData object with this value when is selected
-    const key = event.currentTarget.name;
-    const value = linkedinInputEl.value;
-    fillUserDataObject(key,value);
+    
 
     const linkedinDefinitiveLink =  linkedinInputEl.value; // valor final del link
 
@@ -27,7 +25,10 @@ function linkBottonLinkedin (event) {
             linkedinCardEl.href = `https://www.linkedin.com/in/${linkedinDefinitiveLink}`;
         }
         addBoxshadowifFilled(linkedinInputEl,previewIconLinkedin);
-
+        
+        const key = event.currentTarget.name;
+        const value = linkedinCardEl.href;
+        fillUserDataObject(key,value);
 };
 
 //Listener for the linkedin input element
