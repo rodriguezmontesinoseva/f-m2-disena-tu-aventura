@@ -59,6 +59,8 @@ function handlerCreateCard(event) {
   console.dir(btnShareEl);
   btnShareEl.disabled = true;
   btnShareEl.classList.toggle('btn_share--disabled');
+
+  sendRequest(userData);
 }
 
 //Listener al botón

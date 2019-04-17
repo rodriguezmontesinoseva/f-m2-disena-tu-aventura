@@ -11,10 +11,30 @@ console.log('fill-user-card running');
 // const objectKeys = [];
 
 //Función poderosa!!
-function fillUserDataObject(key,value) {
-    userData[key] = value;
+function fillUserDataObject(key, value) {
+  userData[key] = value;
 }
 
+function sendRequest(userData) {
+  fetch('https://us-central1-awesome-cards-cf6f0.cloudfunctions.net/card/', {
+    method: 'POST',
+    body: JSON.stringify(userData),
+    headers: {
+      'content-type': 'application/json'
+    },
+  })
+    .then(function (resp) { return resp.json(); })
+    .then(function (result) { showURL(result); })
+    .catch(function (error) { console.log(error); });
+}
+
+function showURL(result) {
+  if (result.success) {
+    responseURL.innerHTML = '<a href=' + result.cardURL + '>' + result.cardURL + '</a>';
+  } else {
+    responseURL.innerHTML = 'ERROR:' + result.error;
+  }
+}
 //form.elements
 
 //handler
