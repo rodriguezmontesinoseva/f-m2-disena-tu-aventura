@@ -50,7 +50,7 @@
             </header>
             <!-- MAIN -->
             <main class="main-content column-center">
-                <section class="preview__section grid-item__card">
+                <section class="preview__section grid-item__card bgc-color-green">
                     <div class="preview__section--container">
                         <button class="reset__button">
                             <img class="trash-icon" src="assets/images/trash.svg" alt="imagen reset">Reset</button>
@@ -60,7 +60,7 @@
 
                              <h3 class="ocupation__card">Front-end developer</h3>
 
-                            <div class="photo__preview"></div>
+                            <div class="photo__preview js__profile-image"></div>
                             <!-- ICONOS -->
                             <ul class="social__card--list">
                                 <!-- Phone icon -->
@@ -76,13 +76,13 @@
 
                                 </li>
                                 <!-- linkedin icon -->
-                                <li class="social__icons linkedin-icon"> <a class="linkedin-link" href="https://www.linkedin.com" target="_blank"> 
+                                <li class="social__icons linkedin-icon"> <a class="linkedin-link" href="" target="_blank"> 
                         <svg class="wrap-icon"><use href="#ico-linkedin"/></svg>
                     </a>
 
                                 </li>
                                 <!-- github icon -->
-                                <li class="social__icons github-icon"> <a class="link-github" href="https://github.com/" target="_blank">
+                                <li class="social__icons github-icon"> <a class="link-github" href="" target="_blank">
                          <svg class="wrap-icon"><use href="#ico-github"/></svg>
                     </a>
 
@@ -111,7 +111,7 @@
                                 <div class="radios__picker">
                                     <label class="control__text radios-text" for="option-color-1">
                                         <input class="control__radio radios-buttons" id="option-color-1" type="radio"
-                                        value="color-option1" name="color-option" checked/> <span class="control__indicator"></span>
+                                        value="1" name="palette" checked/> <span class="control__indicator"></span>
  <span class="box-wrapper">
                     <span class="box box-color1"></span>
  <span class="box box-color2"></span>
@@ -122,7 +122,7 @@
                                     </label>
                                     <label class="control__text radios-text" for="option-color-2">
                                         <input class="control__radio radios-buttons" id="option-color-2" type="radio"
-                                        value="color-option2" name="color-option" /> <span class="control__indicator"></span>
+                                        value="2" name="palette" /> <span class="control__indicator"></span>
  <span class="box-wrapper">
                     <span class="box box-color4"></span>
  <span class="box box-color5"></span>
@@ -133,7 +133,7 @@
                                     </label>
                                     <label class="control__text radios-text" for="option-color-3">
                                         <input class="control__radio radios-buttons" id="option-color-3" type="radio"
-                                        value="color-option3" name="color-option" /> <span class="control__indicator"></span>
+                                        value="3" name="palette" /> <span class="control__indicator"></span>
  <span class="box-wrapper">
                     <span class="box box-color7"></span>
  <span class="box box-color8"></span>
@@ -158,33 +158,41 @@
                             </div>
                             <fieldset class="panel__fill-form panel--close">
                                 <div class="dropdown__item">
-                                    <label class="item__label" for="fullName">Nombre completo</label>
-                                    <input class="item__info" type="text" id="fullName"
-                                    placeholder="Ej: Monster Terribilus" name="fullName" required>
+                                    <label class="item__label" for="name">Nombre completo <span class="marker"> *</span>
+
+                                    </label>
+                                    <input class="item__info" type="text" id="fullName" placeholder="Monster Terribilus"
+                                    name="name" required>
                                 </div>
                                 <div class="dropdown__item">
-                                    <label class="item__label" for="rol">Puesto</label>
-                                    <input class="item__info" type="text" id="rol" placeholder="Ej: Front-end"
-                                    name="rol" required>
+                                    <label class="item__label" for="job">Puesto <span class="marker"> *</span>
+
+                                    </label>
+                                    <input class="item__info" type="text" id="rol" placeholder="Front-end"
+                                    name="job" required>
                                 </div>
                                 <div class="dropdown__item">
-                                    <label class="item__label" for="personalImage">Imagen de perfil</label>
+                                    <label class="item__label" for="photo">Imagen de perfil</label>
                                     <div class="item__info--image-container">
-                                        <button class="item__info--button">Añadir imagen</button>
-                                        <img class="item__info--thumbnail" src="https://via.placeholder.com/30x30"
-                                        alt="">
+                                        <input type="file" class="js__profile-upload-btn item__info hidden__file--button"
+                                        name="photo" id="personalImage">
+                                        <button type="button" class="item__info--button js__profile-trigger">Añadir imagen</button>
+                                        <div class="js__profile-preview item__info--thumbnail"></div>
                                     </div>
                                 </div>
                                 <div class="dropdown__item">
-                                    <label class="item__label" for="email">Email</label>
-                                    <input class="item__info" type="email" id="email" placeholder="dontBeScare@gmail.com"
-                                    name="email" required>
+                                    <label class="item__label" for="phone">Teléfono <span class="marker"> *</span>
+
+                                    </label>
+                                    <input class="item__info" type="tel" id="phoneNumber" maxlength="15" minlenght='15'
+                                    size="15" placeholder="+34-123-456-789" name="phone" required>
                                 </div>
                                 <div class="dropdown__item">
-                                    <label class="item__label" for="phoneNumber">Teléfono</label>
-                                    <input class="item__info" type="tel" id="phoneNumber"
-                                    maxlength="15" minlenght='15' size="15" placeholder="+34-123-456-789" name="phoneNumber"
-                                    required>
+                                    <label class="item__label" for="email">Email <span class="marker"> *</span>
+
+                                    </label>
+                                    <input class="item__info" type="email" id="email" placeholder="dontBeScare@gmail.com"
+                                    name="email" required>
                                 </div>
                                 <div class="dropdown__item">
                                     <label class="item__label" for="linkedin">Linkedin</label>
