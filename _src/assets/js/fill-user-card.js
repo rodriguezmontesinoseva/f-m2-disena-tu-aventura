@@ -1,6 +1,5 @@
 'use strict';
 //We want to fill the empty object with the values of the inputs filled by the user:
-console.log('fill-user-card running');
 
 //Función poderosa!!
 function fillUserDataObject(key, value) {
@@ -24,7 +23,6 @@ function showURL(result) {
   if (result.success) {
     const linkProvided = result.cardURL;
     createLinkTweet(linkProvided);
-    console.log(linkProvided);
   } else {
     console.error(`Ha sucedido un error: ${error}`);
   }
