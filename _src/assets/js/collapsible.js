@@ -56,7 +56,7 @@ function handlerCreateCard(event) {
   //Add toogle to show or hide the panel
   twtPanelEl.classList.toggle('panel--close'); 
   //Mostrar el botón como deshabilitado (grisecillo) 
-  console.dir(btnShareEl);
+  // console.dir(btnShareEl);
   btnShareEl.disabled = true;
   btnShareEl.classList.toggle('btn_share--disabled');
 }
