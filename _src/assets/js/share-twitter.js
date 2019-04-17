@@ -19,14 +19,30 @@
 //fetch para pedir la url
 //meter esa url en el href
 
-const linkCardM = document.querySelector('.twitter-share-button');
-const linkCardMContent = linkCardM.href
-const cardLinkEl = document.querySelector('.card-link');
+function createLinkTweet(urlBack){
+    //cojo p donde irá el link
+    const cardLinkEl = document.querySelector('.card-link')
+    //href de donde ira el link = al link que nos mandan de back
+    cardLinkEl.href = urlBack;
+    //poner url de back entre ><
+    cardLinkEl.innerHTML = urlBack;
+
+    //cojo boton twitter
+    const cardLinkTweetEl = document.querySelector('.twitter-share-button');
+    //href=href + card-link
+    cardLinkTweetEl = cardLinkTweetEl + urlBack;
+
+}
+
+createLinkTweet("http://prueba-direccion-backend.html");
 
 
-cardLinkEl.href = 'url back';
+// const linkCardMContent = linkCardM.href;
+// ;
 
-linkCardM.href = linkCardMContent + cardLinkEl.href
+
+
+// linkCardM.href = linkCardMContent + cardLinkEl.href
 
 
 
