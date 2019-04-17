@@ -18,6 +18,7 @@ function getImage(e){
   const myFile = e.currentTarget.files[0];
   fr.addEventListener('load', writeImage);
   fr.readAsDataURL(myFile);
+  
 }
 
 
@@ -25,12 +26,17 @@ function getImage(e){
  * Una vez tenemos los datos listos en el FR podemos
  * trabajar con ellos ;)
  */
-function writeImage() {
+function writeImage(event) {
   /* En la propiedad `result` de nuestro FR se almacena
    * el resultado
    */
   profileImage.style.backgroundImage = `url(${fr.result})`;
   profilePreview.style.backgroundImage = `url(${fr.result})`;
+
+  const key = 'photo';
+  const value = fr.result;
+  fillUserDataObject(key,value);
+
 }
 
 

@@ -12,6 +12,6 @@ function createLinkTweet(urlBack){
 
 }
 
-createLinkTweet('http://prueba-direccion-backend.html');
+
 
 
