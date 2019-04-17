@@ -35,10 +35,23 @@
     line-height: 0;
 }
 
-.footer__image {
-    max-width: 103px;
+.logos {
+    display: flex;
+    align-items: center;
     margin-bottom: 20px;
     @media all and (min-width:$mediaTablet) {
         margin-bottom: 0;
-    }   
+    }  
+}
+
+.footer__image {
+    max-width: 103px;
+    &--logo {
+        max-height: 35px;
+        margin-right: 50px;
+        @media all and (min-width:$mediaTablet) {
+            max-height: 30px;
+            margin-right: 40px;
+        }
+    } 
 }
