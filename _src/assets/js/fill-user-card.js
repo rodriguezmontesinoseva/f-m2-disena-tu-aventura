@@ -30,10 +30,13 @@ function sendRequest(userData) {
 
 function showURL(result) {
   if (result.success) {
-    responseURL.innerHTML = '<a href=' + result.cardURL + '>' + result.cardURL + '</a>';
+    const linkProvided = result.cardURL;
+    createLinkTweet(linkProvided);
+    console.log(linkProvided);
   } else {
-    responseURL.innerHTML = 'ERROR:' + result.error;
+    console.error(`Ha sucedido un error: ${error}`);
   }
+  
 }
 //form.elements
 
