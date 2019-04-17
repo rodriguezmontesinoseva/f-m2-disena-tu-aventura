@@ -30,7 +30,7 @@ function createLinkTweet(urlBack){
     //cojo boton twitter
     const cardLinkTweetEl = document.querySelector('.twitter-share-button');
     //href=href + card-link
-    cardLinkTweetEl = cardLinkTweetEl + urlBack;
+    cardLinkTweetEl.href = cardLinkTweetEl.href + urlBack;
 
 }
 
