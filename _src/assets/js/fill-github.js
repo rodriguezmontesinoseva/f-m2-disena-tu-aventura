@@ -3,8 +3,11 @@ const githubLinkEl = document.querySelector('.link-github');  // elemento <a>
 
 // recojer el icono de la tarjeta preview de Github:
 const previewIconGitHub = document.querySelector('.github-icon');
+   
+function putLinkIcon(event) {
+    //Fill the userData object with this value when is selected
+    
 
-function putLinkIcon() {
     const githubDefinitiveLink =  githubEl.value; // valor final del link
     
     if (!githubDefinitiveLink){
@@ -14,6 +17,10 @@ function putLinkIcon() {
             githubLinkEl.href = `https://github.com/${githubDefinitiveLink}`;
         }
         addBoxshadowifFilled(githubEl,previewIconGitHub);
+
+        const key = event.currentTarget.name;
+        const value = githubLinkEl.href;
+        fillUserDataObject(key,value);
 }
 
 githubEl.addEventListener('keyup', putLinkIcon);

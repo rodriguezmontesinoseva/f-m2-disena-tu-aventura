@@ -1,3 +1,4 @@
+'use strict'
 //Create an empty object, following Adalab documentation instructions here
 // https://books.adalab.es/materiales-front-end-f/proyectos/p2_anexo
 
@@ -9,7 +10,7 @@ const userData = {
     phone: "",
     email: "",
     linkedin: "",
-    gitHub: "",
+    github: "",
     photo: "",
 }
 
@@ -21,6 +22,6 @@ const ExUserData = {
     phone: "+34666666",
     email: "dontBeScare@gmail.com",
     linkedin: "linkedin.com/monsterYey",
-    gitHub: "monsterYey",
+    github: "monsterYey",
     photo: "data:image/png;base64,2342ba...",
 }
