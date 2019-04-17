@@ -1,4 +1,4 @@
-"use strict";
+'use strict';
 
 //al hacer clic en el botón compartir. muestra la url y boton compartir en twitter (ok)
 // mostrar la url: 
@@ -20,13 +20,14 @@
 //meter esa url en el href
 
 const linkCardM = document.querySelector('.twitter-share-button');
-const linkCardMContent = linkCardM.href
+const linkCardMContent = linkCardM.href;
 const cardLinkEl = document.querySelector('.card-link');
 
 
 cardLinkEl.href = 'url back';
+cardLinkEl.innerHTML =cardLinkEl.href;
 
-linkCardM.href = linkCardMContent + cardLinkEl.href
+linkCardM.href = linkCardMContent + cardLinkEl.href;
 
 
 
