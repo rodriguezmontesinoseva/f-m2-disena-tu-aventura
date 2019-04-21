@@ -16,14 +16,10 @@ function emptyImg(){
 }
 
 function ereaseLocalStorage() {
-    localStorage.removeItem('palette');
-    localStorage.removeItem('name');
-    localStorage.removeItem('job');
-    localStorage.removeItem('phone');
-    localStorage.removeItem('email');
-    localStorage.removeItem('linkedin');
-    localStorage.removeItem('gitHub');
-    localStorage.removeItem('photo');
+    for(let input of inputs){
+        input.value = '';
+        localStorage.removeItem(input.name)
+    }
 }
 
 function ereaseUserDataObject() {
