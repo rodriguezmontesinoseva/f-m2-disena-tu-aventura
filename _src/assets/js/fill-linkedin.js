@@ -29,6 +29,7 @@ function linkBottonLinkedin (event) {
         const key = event.currentTarget.name;
         const value = linkedinCardEl.href;
         fillUserDataObject(key,value);
+        saveCache()
 };
 
 //Listener for the linkedin input element

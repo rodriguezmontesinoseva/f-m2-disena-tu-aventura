@@ -25,5 +25,6 @@ function changeEmailOnCard (event){
     //llamar funccion que le añade la clase addBoxShadow__IfInputIsFIlled 
     addBoxshadowifFilled(emailLink,previewIconEmail);
     }
+    saveCache()
 }
 emailLink.addEventListener('keyup', changeEmailOnCard);

@@ -16,6 +16,7 @@ function changeRolOnCard (event){
 
     // Si el input está vacío, pone el testo por defecto, si hay algo, lo sustituye.
     ocupationPreviewEl.innerHTML = inputRol || defectOcupationPreview;
+    saveCache()
     }
 rolEl.addEventListener('keyup', changeRolOnCard);
 

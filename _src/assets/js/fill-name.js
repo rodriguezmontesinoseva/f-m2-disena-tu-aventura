@@ -14,6 +14,7 @@ function printName2 (event) {
     fillUserDataObject(key,value);
 
     nameCardEl.innerHTML = nameInputEl.value || defaultName;
+    saveCache()
 }
 
 //Listener

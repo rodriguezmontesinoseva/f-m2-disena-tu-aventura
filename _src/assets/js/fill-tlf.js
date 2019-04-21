@@ -43,6 +43,7 @@ function phonenumber(event){
     tlfCardImage.removeAttribute("href");
   }
   addBoxshadowifFilled(tlfInputEl,previewIconTelf);
+  saveCache()
 }
 
 
