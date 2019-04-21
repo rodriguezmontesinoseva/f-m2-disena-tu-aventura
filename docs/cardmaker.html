@@ -184,14 +184,15 @@
                                     <label class="item__label" for="phone">Teléfono <span class="marker"> *</span>
 
                                     </label>
-                                    <input class="item__info" type="tel" id="phoneNumber" maxlength="15" minlenght='15'
-                                    size="15" placeholder="+34-123-456-789" name="phone" required>
+                                    <input class="item__info" type="tel" id="phoneNumber" placeholder="123456789"
+                                    maxlength="9" name="phone" pattern="^\d{3}\d{3}\d{3}$" title="ej: 123456789"
+                                    required>
                                 </div>
                                 <div class="dropdown__item">
                                     <label class="item__label" for="email">Email <span class="marker"> *</span>
 
                                     </label>
-                                    <input class="item__info" type="email" id="email" placeholder="dontBeScare@gmail.com"
+                                    <input class="item__info" type="email" id="email" placeholder="dontBeScared@gmail.com"
                                     name="email" required>
                                 </div>
                                 <div class="dropdown__item">
@@ -223,12 +224,14 @@
                         </section>
                         <section class="align_share align_share_text panel-design panel__twitter panel--close">
                             <p class="card-create">La tarjeta ha sido creada</p>
-                            <p> <a class="card-link" href="http://">link</a>
+                            <p> <a class="card-link" href=""></a>
 
                             </p>
-                            <div class="align_share">
-                                <button class="btn_twitter">
-                                    <img class="icon__twitter" src="assets/images/twitter.svg" alt="compartir en Twitter">Compartir en Twitter</button>
+                            <div class="align_share"> <a class="twitter-share-button" href='https://twitter.com/intent/tweet?text= Mirad%20que%20tarjeta%20más%20chachi%20he%20creado%20con%20la%20aplicación%20"Awesome%20Profile-cards"&url= '
+                                data-size="large">
+             <img class= "icon__twitter" src="assets/images/twitter.svg" alt="compartir en Twitter">Compartir en Twitter
+         </a>
+
                             </div>
                         </section>
                     </form>
@@ -238,12 +241,16 @@
             <footer class="footer__page">
                 <div class="footer__flex-wrapper column-center"> <small class="footer__copyright">Awesome profile-cards @2019</small>
 
-                    <a
-                    class="footer__link" href="https://adalab.es/" target="blank">
-                        <img src="assets/images/logo-adalab.png" alt="Logo de Adalab" class="footer__image">
-                        </a>
+                    <div
+                    class="logos">
+                        <img src="assets/images/logo-disena-aventura.jpg" alt="Logo de Diseña tu aventura"
+                        class="footer__image--logo"> <a class="footer__link" href="https://adalab.es/" target="blank">
+            <img src="assets/images/logo-adalab.png" alt="Logo de Adalab" class="footer__image">
+            </a>
+
                 </div>
-            </footer>
+        </div>
+        </footer>
         </div>
         <script type="text/javascript" src="assets/js/main.js"></script>
     </body>
