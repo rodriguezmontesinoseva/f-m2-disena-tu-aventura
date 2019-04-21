@@ -30,7 +30,8 @@
       "_src/assets/js/get-avatar.js",
       "_src/assets/js/fill-user-card.js",
       "_src/assets/js/btn-reset.js",
-      "_src/assets/js/share-twitter.js"
+      "_src/assets/js/share-twitter.js",
+      "_src/assets/js/ls.js"
 		],
 		"dest": "public/assets/js/",
     "dist": "docs/assets/js/"
