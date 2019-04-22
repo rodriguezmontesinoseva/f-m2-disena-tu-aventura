@@ -52,7 +52,7 @@ function changeColourPreview(event){
          previewSectionEl.classList.add('bgc-color-blue');
 
     }
-    saveCache()
+    saveCache();
 }
 
 option1ColourEl.addEventListener ('click', changeColourPreview);

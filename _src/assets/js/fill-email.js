@@ -15,16 +15,16 @@ function changeEmailOnCard (event){
     fillUserDataObject(key,value);
         
     // Si no hay e-mail, el href no se genera //
-    if (!emailHref){
-    emailPreviewLink.removeAttribute("href");
+    if (emailLink.value){
+        emailPreviewLink.href = `mailto:${emailHref}`;
     }
     // Si lo hay, se crea //
-    else {
-    emailPreviewLink.href = `mailto:${emailHref}`;
-
+    else {   
+    emailPreviewLink.removeAttribute("href");
     //llamar funccion que le añade la clase addBoxShadow__IfInputIsFIlled 
     addBoxshadowifFilled(emailLink,previewIconEmail);
     }
     saveCache()
+    
 }
 emailLink.addEventListener('keyup', changeEmailOnCard);

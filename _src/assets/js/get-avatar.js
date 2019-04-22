@@ -36,7 +36,7 @@ function writeImage(event) {
   const key = 'photo';
   const value = fr.result;
   fillUserDataObject(key,value);
-  saveCache()
+  saveCache();
 
 }
 

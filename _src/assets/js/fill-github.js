@@ -21,7 +21,8 @@ function putLinkIcon(event) {
         const key = event.currentTarget.name;
         const value = githubLinkEl.href;
         fillUserDataObject(key,value);
-        saveCache()
+        saveCache();
+        
 }
 
 githubEl.addEventListener('keyup', putLinkIcon);

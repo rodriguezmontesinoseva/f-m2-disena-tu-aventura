@@ -2,9 +2,9 @@
 //Create an empty object, following Adalab documentation instructions here
 // https://books.adalab.es/materiales-front-end-f/proyectos/p2_anexo
 
-const userData = {
+let userData = {
     //from design, a number between 1-3, that relates with the 3 colour palettes
-    palette: 1,
+    palette: "",
     name: "",
     job: "",
     phone: "",
