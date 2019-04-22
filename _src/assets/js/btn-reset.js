@@ -16,14 +16,8 @@ function emptyImg(){
 }
 
 function ereaseLocalStorage() {
-    localStorage.removeItem('palette');
-    localStorage.removeItem('name');
-    localStorage.removeItem('job');
-    localStorage.removeItem('phone');
-    localStorage.removeItem('email');
-    localStorage.removeItem('linkedin');
-    localStorage.removeItem('gitHub');
-    localStorage.removeItem('photo');
+    localStorage.removeItem('card');
+   
 }
 
 function ereaseUserDataObject() {
@@ -40,6 +34,10 @@ function ereaseUserDataObject() {
 function handleButtonClick() {
     emptyImg();
     emptyInputs();
+    ereaseUserDataObject();
+
+        ereaseLocalStorage();
+
 
     // LLamamos a las funciones que borran la info de la tarjeta y pone el valor por defecto (foto)
     printName2();
@@ -53,9 +51,7 @@ function handleButtonClick() {
     option1ColourEl.click();
 
     // Borrar toda la info del caché
-    ereaseLocalStorage();
     // Vacía el objeto con los datos del usuario
-    ereaseUserDataObject();
 }
 
 btnResetEl.addEventListener('click', handleButtonClick);

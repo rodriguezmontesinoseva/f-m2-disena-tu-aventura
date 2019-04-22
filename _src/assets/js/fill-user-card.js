@@ -29,6 +29,8 @@ function showURL(result) {
   
 }
 
+
+
 function saveCache() {
 
   localStorage.setItem('card', JSON.stringify(userData));
@@ -45,16 +47,30 @@ nameInputEl.addEventListener('keyup', getCache);
 
 reloadPage();
 
+//aqui tendria que llamar a todas las funcciones de cada input que hacen que lo que se rellena en el input se copie en la tarjeta-preview card, pero no puedo porque sale un error
+
 function reloadPage() {
   const userCardFromCache = getCache();
   if (userCardFromCache) {
     userData = userCardFromCache;
-    nameInputEl.value = userData.name
+
+    nameInputEl.value = userData.name 
+    nameCardEl.innerHTML = userData.name
+
     rolEl.value = userData.job
+    ocupationPreviewEl.innerHTML = userData.job 
+
     tlfInputEl.value = userData.phone
-    emailLink.value = userData.email
+    tlfCardImage.href = 'tel:' + userData.phone;
+
+    emailPreviewLink.href = `mailto:${userData.email}`;
+    emailLink.value = userData.email;
+
+    linkedinCardEl.href = `https://www.linkedin.com/in/${userData.l}`;
     linkedinInputEl.value = userData.linkedin
+
     githubEl.value = userData.github
+    githubLinkEl.href = `https://github.com/${userData.github}`;
     themeUser();
     imgUser();
     
