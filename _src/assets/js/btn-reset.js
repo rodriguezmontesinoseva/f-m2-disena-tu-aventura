@@ -36,7 +36,12 @@ function handleButtonClick() {
     emptyInputs();
     ereaseUserDataObject();
 
-        ereaseLocalStorage();
+    ereaseLocalStorage();
+
+    addBoxshadowifFilled(emailLink,previewIconEmail);
+    addBoxshadowifFilled(githubEl,previewIconGitHub);
+    addBoxshadowifFilled(linkedinInputEl,previewIconLinkedin);
+    addBoxshadowifFilled(tlfInputEl,previewIconTelf);
 
 
     // LLamamos a las funciones que borran la info de la tarjeta y pone el valor por defecto (foto)
@@ -54,4 +59,4 @@ function handleButtonClick() {
     // Vacía el objeto con los datos del usuario
 }
 
-btnResetEl.addEventListener('click', handleButtonClick);
+btnResetEl.addEventListener('click', handleButtonClick);     
