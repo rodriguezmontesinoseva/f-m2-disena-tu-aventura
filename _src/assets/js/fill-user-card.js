@@ -73,6 +73,12 @@ function reloadPage() {
     githubLinkEl.href = `https://github.com/${userData.github}`;
     themeUser();
     imgUser();
+    writeImage();
+
+    addBoxshadowifFilled(emailLink,previewIconEmail);
+    addBoxshadowifFilled(githubEl,previewIconGitHub);
+    addBoxshadowifFilled(linkedinInputEl,previewIconLinkedin);
+    addBoxshadowifFilled(tlfInputEl,previewIconTelf);
     
   }
 }
