@@ -8,7 +8,7 @@ const panelFillFormEl = document.querySelector('.panel__fill-form');
 const alignShareEl= document.querySelector('.align_share');
 
 //General function: one open panel, the rest closed.
-function collapsiblePanel(event) {    
+const collapsiblePanel = (event) =>{    
     
   //All collapsables are closed
   panelDesignRadiosEl.classList.add('panel--close');
@@ -49,7 +49,7 @@ const btnShareEl = document.querySelector('.btn_share');
 const twtPanelEl = document.querySelector('.panel__twitter');
 
 //Añadir handler que hace 2 cosas:
-function handlerCreateCard(event) {
+const handlerCreateCard = (event)=> {
   event.preventDefault();
 
   //Mostrar/ocultar panel mediante toggle
