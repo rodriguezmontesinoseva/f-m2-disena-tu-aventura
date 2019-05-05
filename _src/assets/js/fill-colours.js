@@ -14,12 +14,10 @@ function changeColourPreview(event){
          const value = 1;
           fillUserDataObject(key,value);
 
-         previewCardEl.classList.remove('theme-red');
-         previewCardEl.classList.remove('theme-blue');
+         previewCardEl.classList.remove('theme-red','theme-blue');
          previewCardEl.classList.add('theme-green');
 
-         previewSectionEl.classList.remove('bgc-color-blue');
-         previewSectionEl.classList.remove('bgc-color-red');
+         previewSectionEl.classList.remove('bgc-color-blue','bgc-color-red');
          previewSectionEl.classList.add('bgc-color-green');
 
 
@@ -28,29 +26,23 @@ function changeColourPreview(event){
           const value = 2;
           fillUserDataObject(key,value);
 
-         previewCardEl.classList.remove('theme-green');
-         previewCardEl.classList.remove('theme-blue');
+         previewCardEl.classList.remove('theme-green','theme-blue');
          previewCardEl.classList.add('theme-red');
 
-         previewSectionEl.classList.remove('bgc-color-blue');
-         previewSectionEl.classList.remove('bgc-color-green');
+         previewSectionEl.classList.remove('bgc-color-blue', 'bgc-color-green');
          previewSectionEl.classList.add('bgc-color-red');
 
-
-
+         
     }else if(option3ColourEl.checked){
           const key = event.currentTarget.name;
           const value = 3;
           fillUserDataObject(key,value);
 
-         previewCardEl.classList.remove('theme-red');
-         previewCardEl.classList.remove('theme-green');
+         previewCardEl.classList.remove('theme-red','theme-green');
          previewCardEl.classList.add('theme-blue');
 
-         previewSectionEl.classList.remove('bgc-color-red');
-         previewSectionEl.classList.remove('bgc-color-green');
+         previewSectionEl.classList.remove('bgc-color-red','bgc-color-green');
          previewSectionEl.classList.add('bgc-color-blue');
-
     }
     saveCache();
 }
