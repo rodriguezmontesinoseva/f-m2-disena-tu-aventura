@@ -54,25 +54,25 @@ function reloadPage() {
   if (userCardFromCache) {
     userData = userCardFromCache;
 
-    nameInputEl.value = userData.name 
-    nameCardEl.innerHTML = userData.name
+    nameInputEl.value = userData.name ;
+    nameCardEl.innerHTML = userData.name;
 
-    rolEl.value = userData.job
-    ocupationPreviewEl.innerHTML = userData.job 
+    rolEl.value = userData.job;
+    ocupationPreviewEl.innerHTML = userData.job || "Front-End Developer";
 
-    tlfInputEl.value = userData.phone
+    tlfInputEl.value = userData.phone;
     tlfCardImage.href = 'tel:' + userData.phone;
 
     emailPreviewLink.href = `mailto:${userData.email}`;
     emailLink.value = userData.email;
 
     linkedinCardEl.href = `https://www.linkedin.com/in/${userData.l}`;
-    linkedinInputEl.value = userData.linkedin
+    linkedinInputEl.value = userData.linkedin;
 
-    githubEl.value = userData.github
+    githubEl.value = userData.github;
     githubLinkEl.href = `https://github.com/${userData.github}`;
     themeUser();
-    emptyImg();
+    //emptyImg();
     imgUser();
 
     addBoxshadowifFilled(emailLink,previewIconEmail);
@@ -88,7 +88,6 @@ function imgUser(){
     profileImage.style.backgroundImage = `url(${userData.photo})`;
     profilePreview.style.backgroundImage = `url(${userData.photo})`; }
   }
-
 
  function themeUser (){
   
