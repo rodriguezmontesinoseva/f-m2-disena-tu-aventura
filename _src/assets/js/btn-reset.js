@@ -15,10 +15,7 @@ function emptyImg(){
     profilePreview.style.backgroundImage = '';
 }
 
-function ereaseLocalStorage() {
-    localStorage.removeItem('card');
-   
-}
+const ereaseLocalStorage = () => localStorage.removeItem('card');
 
 function ereaseUserDataObject() {
     // Como no quiero borrar la info del objeto lo que hago es vaciar sus datos y ponerlos por defecto
@@ -43,20 +40,13 @@ function handleButtonClick() {
     addBoxshadowifFilled(linkedinInputEl,previewIconLinkedin);
     addBoxshadowifFilled(tlfInputEl,previewIconTelf);
 
-
-    // LLamamos a las funciones que borran la info de la tarjeta y pone el valor por defecto (foto)
-    printName2();
-    changeRolOnCard();
-    changeEmailOnCard();
-    phonenumber();
-    putLinkIcon();
-    linkBottonLinkedin();
-
-    // Poner el color seleccionado en el default (primer radio button)
+    nameCardEl.innerHTML = defaultName;
+    ocupationPreviewEl.innerHTML = defaultJob;
+    emailPreviewLink.href = '';
+    tlfCardImage.href = '';
+    githubLinkEl.href = '';
+    linkedinCardEl.href = '';
     option1ColourEl.click();
-
-    // Borrar toda la info del caché
-    // Vacía el objeto con los datos del usuario
 }
 
 btnResetEl.addEventListener('click', handleButtonClick);     

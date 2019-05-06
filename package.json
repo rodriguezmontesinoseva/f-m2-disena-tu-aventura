@@ -6,7 +6,6 @@
     "browser-sync": "^2.26.3",
     "del": "^3.0.0",
     "eslint": "^4.19.1",
-    "gulp": "^4",
     "gulp-autoprefixer": "^6.0.0",
     "gulp-clean-css": "^4.0.0",
     "gulp-combine-mq": "^0.4.0",
@@ -33,6 +32,6 @@
   "license": "MIT",
   "homepage": "https://github.com/Adalab/Adalab-web-starter-kit",
   "devDependencies": {
-    "gulp": "^4.0.0"
+    "gulp": "^4.0.1"
   }
 }
