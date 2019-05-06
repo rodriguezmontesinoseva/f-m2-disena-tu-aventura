@@ -55,7 +55,7 @@ function reloadPage() {
     userData = userCardFromCache;
 
     nameInputEl.value = userData.name ;
-    nameCardEl.innerHTML = userData.name;
+    nameCardEl.innerHTML = userData.name || "Nombre Apellido";
 
     rolEl.value = userData.job;
     ocupationPreviewEl.innerHTML = userData.job || "Front-End Developer";
