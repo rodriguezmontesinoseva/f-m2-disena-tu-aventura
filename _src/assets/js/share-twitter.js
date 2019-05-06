@@ -1,6 +1,6 @@
 'use strict';
 
-function createLinkTweet(urlBack) {
+const createLinkTweet = urlBack => {
   const cardLinkEl = document.querySelector('.card-link');
   cardLinkEl.href = urlBack;
   cardLinkEl.innerHTML = urlBack;
