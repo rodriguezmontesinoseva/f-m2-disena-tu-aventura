@@ -10,11 +10,9 @@ const linkedinDefault = linkedinCardEl.href;
 // recojer el icono de la tarjeta preview de Linkdin:
 const previewIconLinkedin = document.querySelector('.linkedin-icon');
 
-
 //Handler:
-function linkBottonLinkedin (event) {
+const linkBottonLinkedin = event => {
     //Fill the userData object with this value when is selected
-    
 
     const linkedinDefinitiveLink =  linkedinInputEl.value; // valor final del link
 
