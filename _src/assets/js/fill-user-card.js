@@ -39,7 +39,7 @@ const saveCache = () => {
 function getCache() {
   const objectInfo = localStorage.getItem('card');
   const objectParse = JSON.parse(objectInfo);
-  console.log(objectParse);
+  // console.log(objectParse);
   return objectParse;
 }
 
@@ -57,8 +57,8 @@ function reloadPage() {
     nameInputEl.value = userData.name ;
     nameCardEl.innerHTML = userData.name || "Nombre Apellido";
 
-    rolEl.value = userData.job;
-    ocupationPreviewEl.innerHTML = userData.job || "Front-End Developer";
+    rolInputEl.value = userData.job
+    jobCardEl.innerHTML = userData.job || "Front-End Developer";
 
     tlfInputEl.value = userData.phone;
     tlfCardImage.href = 'tel:' + userData.phone;
@@ -72,7 +72,6 @@ function reloadPage() {
     githubEl.value = userData.github;
     githubLinkEl.href = `https://github.com/${userData.github}`;
     themeUser();
-    //emptyImg();
     imgUser();
 
     addBoxshadowifFilled(emailLink,previewIconEmail);
