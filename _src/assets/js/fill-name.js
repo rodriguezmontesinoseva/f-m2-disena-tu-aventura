@@ -9,7 +9,6 @@ const jobCardEl = document.querySelector('.ocupation__card');
 const defaultName = nameCardEl.innerHTML;
 const defaultJob = jobCardEl.innerHTML;
 
-//jobCardEl
 
 function printNameJob (event) {
     //Fill the userData object with this value when is selected
