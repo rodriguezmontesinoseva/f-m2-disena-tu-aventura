@@ -6,7 +6,7 @@ function fillUserDataObject(key, value) {
   userData[key] = value;
 }
 //Función para enviar el objeto
-function sendRequest(userData) {
+const sendRequest = userData => {
   fetch('https://us-central1-awesome-cards-cf6f0.cloudfunctions.net/card/', {
     method: 'POST',
     body: JSON.stringify(userData),
@@ -19,7 +19,7 @@ function sendRequest(userData) {
     .catch(function (error) { console.log(error); });
 }
 // y recoger la URL generada
-function showURL(result) {
+const showURL = result => {
   if (result.success) {
     const linkProvided = result.cardURL;
     createLinkTweet(linkProvided);
@@ -31,7 +31,7 @@ function showURL(result) {
 
 
 
-function saveCache() {
+const saveCache = () => {
 
   localStorage.setItem('card', JSON.stringify(userData));
 }
@@ -72,8 +72,8 @@ function reloadPage() {
     githubEl.value = userData.github
     githubLinkEl.href = `https://github.com/${userData.github}`;
     themeUser();
+    emptyImg();
     imgUser();
-    writeImage();
 
     addBoxshadowifFilled(emailLink,previewIconEmail);
     addBoxshadowifFilled(githubEl,previewIconGitHub);
@@ -84,14 +84,11 @@ function reloadPage() {
 }
 
 function imgUser(){
-  if(userData.photo){
+  if(userData.photo !== ""){
     profileImage.style.backgroundImage = `url(${userData.photo})`;
     profilePreview.style.backgroundImage = `url(${userData.photo})`; }
-    else {
-      profileImage.style.backgroundImage = `url(${fr.result})`;
-      profilePreview.style.backgroundImage = `url(${fr.result})`;
-  }}
- 
+  }
+
 
  function themeUser (){
   
