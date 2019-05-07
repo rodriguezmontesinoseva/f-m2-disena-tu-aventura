@@ -1,10 +1,17 @@
 //A color theme is selected in the DESIGN section and the preview is updated with those colors in real time.
 
+const optionsColors = document.querySelectorAll('.radios-buttons');
+console.log(optionsColors);
+
 const option1ColourEl = document.querySelector('#option-color-1');
 const option2ColourEl = document.querySelector('#option-color-2');
 const option3ColourEl = document.querySelector('#option-color-3');
 const previewCardEl = document.querySelector('.preview__card');
 const previewSectionEl =document.querySelector ('.preview__section');
+
+for (const option of optionsColors){
+     option.addEventListener('click', changeColourPreview);
+}
 
 //function asking which option-button is marked and loads that range of colors into the preview
 function changeColourPreview(event){
@@ -47,6 +54,6 @@ function changeColourPreview(event){
     saveCache();
 }
 
-option1ColourEl.addEventListener ('click', changeColourPreview);
-option2ColourEl.addEventListener ('click', changeColourPreview);
-option3ColourEl.addEventListener ('click', changeColourPreview);
+// option1ColourEl.addEventListener ('click', changeColourPreview);
+// option2ColourEl.addEventListener ('click', changeColourPreview);
+// option3ColourEl.addEventListener ('click', changeColourPreview);
